@@ -8,15 +8,108 @@ import java.io.IOException;
 import java.util.*;
 
 public class CSVReader {
-    private ArrayList<Integer> activation = new ArrayList<Integer>();
-    private ArrayList<Integer> lati = new ArrayList<Integer>();
-    private ArrayList<Integer> longi = new ArrayList<Integer>();
+    private ArrayList<Integer> activation = new ArrayList<>();
+    private ArrayList<Double> lati = new ArrayList<>();
+    private ArrayList<Double> longi = new ArrayList<>();
 
-    CSVReader(String csvFile){
-        readFile(csvFile);
+    private final String uber = "UBER";
+    private final String location = "LOCATION";
+
+    private String[] locationNames;
+    private double[][] times;
+//    private double[][] pm_times;
+//    private double[][] midday_times;
+//    private double[][] evening_times;
+//    private double[][] earlymorning_times;
+
+
+    CSVReader (String csvFile, String which) {
+        if (which.equals(uber)) {
+            System.out.println("Inputting Uber Files...");
+            readUberFile(csvFile);
+        } else { //data
+            System.out.println("Inputting Location Data...");
+            readFile(csvFile);
+        }
     }
 
     private void readFile(String csvFile) {
+        BufferedReader br = null;
+        String line = "";
+        String cvsSplitBy = ",";
+
+        //TODO this is hardcoded w number of locations I did
+        //TODO update when using new ones
+
+        int savedLocations = 0;
+        int numLocationsTotal = 10;
+        int countX = 0;
+        int countY = 0;
+        boolean doneWithNames = false;
+        boolean skipNext = false;
+        boolean firstSkip = true;
+        locationNames = new String[numLocationsTotal];
+        times = new double[numLocationsTotal][numLocationsTotal];
+
+        try {
+
+            br = new BufferedReader(new FileReader(csvFile));
+            while ((line = br.readLine()) != null) {
+                String[] eachLine = line.split(cvsSplitBy);
+
+                for (String each : eachLine){
+                    if (skipNext) {
+                        skipNext=false;
+                        continue;
+                    }
+
+                    //saving names of the locations
+                    if (savedLocations<numLocationsTotal) {
+                        locationNames[savedLocations] = each.trim();
+                        savedLocations++;
+                        continue;
+                    } else {
+                        doneWithNames = true;
+                    }
+
+                    //save numbers
+                    if (countX<numLocationsTotal && doneWithNames){
+                        if (firstSkip){
+                            firstSkip = false;
+                            continue;
+                        }
+                        times[countY][countX]= Double.parseDouble(each);
+                        countX++;
+                        if (countX==numLocationsTotal){
+                            countY++;
+                            countX = 0;
+                            skipNext = true;
+                        }
+                    }
+                }
+            }
+
+
+            //printLocations(locationNames);
+            //printdata(times);
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    private void readUberFile(String csvFile) {
+        int linecount = 0;
         BufferedReader br = null;
         String line = "";
         String cvsSplitBy = ",";
@@ -24,17 +117,29 @@ public class CSVReader {
 
             br = new BufferedReader(new FileReader(csvFile));
             while ((line = br.readLine()) != null) {
-                // use comma as separator
+                //TODO remove this!!!
+                if (linecount>500) {
+                    break;
+                } else {
+                    linecount++;
+                }
+
+
                 String[] uber = line.split(cvsSplitBy);
 
-                System.out.println("Uber [time= " + uber[0] + " , lat=" + uber[1] + " , long=" + uber[2]  + "]");
+                //System.out.println("Uber [time= " + uber[0] + " , lat=" + uber[1] + " , long=" + uber[2]  + "]");
 
-                int timeRequestMadeMinutes = ( Integer.parseInt(uber[0].substring(uber[0].indexOf(":")+1,uber[0].indexOf(":")+3)) )
-                + ( Integer.parseInt(uber[0].substring(uber[0].indexOf(" ")+1,uber[0].indexOf(":")))*60 );
+                int seconds = Integer.parseInt(uber[0].substring(uber[0].indexOf(" ")+1,uber[0].indexOf(":")))*60;
+                int min = Integer.parseInt(uber[0].substring(uber[0].indexOf(":")+1,uber[0].indexOf(":")+3));
+
+                int timeRequestMadeMinutes = (min) + ( seconds );
+
+
+
 
                 activation.add(timeRequestMadeMinutes);
-                lati.add(Integer.parseInt(uber[1]));
-                longi.add(Integer.parseInt(uber[2]));
+                lati.add(Double.parseDouble(uber[1]));
+                longi.add(Double.parseDouble(uber[2]));
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -51,8 +156,51 @@ public class CSVReader {
         }
     }
 
-    public ArrayList<Integer> getLats(){return this.lati;}
-    public ArrayList<Integer> getLongs(){return this.longi;}
+    public ArrayList<Double> getLats(){return this.lati;}
+    public ArrayList<Double> getLongs(){return this.longi;}
     public ArrayList<Integer> getActivationTimes(){return this.activation;}
+
+    private void printLocations(String[] arr){
+        System.out.println("printing locaitons ======");
+        for(int i=0; i<arr.length; i++){
+            System.out.print(String.format("%20s", arr[i]));
+        }
+    }
+
+    private void printdata(double[][] arr){
+        System.out.println("printing data ======");
+        for(int i=0; i<arr.length; i++){
+            for(int j=0; j<arr[0].length; j++){
+                System.out.print(String.format("%20s", arr[i][j]));
+            }
+            System.out.println("");
+        }
+    }
+
+
+    public double[][] get_times() {
+        return times;
+    }
+//
+//    public double[][] getPm_times() {
+//        return pm_times;
+//    }
+//
+//    public double[][] getMidday_times() {
+//        return midday_times;
+//    }
+//
+//    public double[][] getEvening_times() {
+//        return evening_times;
+//    }
+//
+//    public double[][] getEarlymorning_times() {
+//        return earlymorning_times;
+//    }
+
+    public String[] getlocationNames() {
+        return locationNames;
+    }
+
 
 }

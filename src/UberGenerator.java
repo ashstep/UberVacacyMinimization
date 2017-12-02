@@ -40,6 +40,7 @@ public class UberGenerator {
         } else {
             concentratedLocationGeneration();
         }
+        System.out.println("All Ubers have been initialized, exiting uber generator");
 
     }
 
@@ -47,8 +48,10 @@ public class UberGenerator {
         int randomNum;
         for (int i = 0; i < this.numberOfUbers; i++) {
             randomNum = new Random().nextInt(graph_size);
-            // System.out.println("  - Init vacant Uber #" + i + " at location number  " + randomNum);
-            allUbers.put( new Uber(graph, li.get(randomNum), traversalBehavior) , null);
+            Location start = li.get(randomNum);
+            Uber a = new Uber(graph, start, traversalBehavior);
+            //System.out.println("  - Init vacant Uber #" + a.getID()+" at location   " + a.getCurrLocation().getName());
+            allUbers.put( a , null);
         }
         allUbersList = new ArrayList<>(allUbers.keySet());
     }

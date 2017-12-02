@@ -23,6 +23,18 @@ public class Dijkstra {
         for (Location eachLocation : allLocations.keySet()){
             this.mapAllDistances.put(eachLocation, calculateShortestPathFromSource(eachLocation));
         }
+
+
+//        //printing
+//        System.out.println("PRINTING DISTANCE MAP!");
+//
+//        for (Map.Entry<Location,HashMap<Location,Double>> entry : mapAllDistances.entrySet()) {
+//            System.out.println(entry.getKey().getName() + ": ");
+//            for (Map.Entry<Location,Double> second :entry.getValue().entrySet()) {
+//                System.out.println("    " + second.getKey().getName() + " of distance =  " + second.getValue());
+//            }
+//        }
+
     }
 
     private HashMap<Location, Double> calculateShortestPathFromSource(Location source) {

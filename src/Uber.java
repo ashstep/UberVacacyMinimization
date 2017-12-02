@@ -27,7 +27,6 @@ public class Uber {
     private HashMap<Location, Double> allLocations;
     private List<Location> allLocationsList;
     private HashMap<Location,HashMap<Location,Double>> distanceMap;
-    private List<Location> topLocations; //have the most number of people
 
 
     private String status;
@@ -42,6 +41,9 @@ public class Uber {
     private final String high_concentration_movement = "HIGH_CONCENTRATION_MOVEMENT";
     private final String search_vicinity_movement= "SEARCH_VICINITY_MOVEMENT";
     private boolean patternSet;
+
+    private UberHandler myHandler;
+    private Graph g;
 
 
 
@@ -63,7 +65,7 @@ public class Uber {
         this.allTripTimes = new ArrayList<>();
         this.id= count++;
 
-        this.topLocations = g.getPopularLocations();
+        this.g = g;
         this.allLocations = g.getAllLocations();
         this.allLocationsList = g.getAllLocationsAsList();
         this.distanceMap = g.getDistanceMap();
@@ -75,11 +77,15 @@ public class Uber {
        this.p = pass;
        this.destination_pickup = p.getCurrentLocation();
        this.destination_dropoff = p.getTargetLocation();
-       //System.out.println("           uber currently at  " + this.current.getUniqueIdentifier());
-       //System.out.println("           p.getCurrentLocation() " + p.getCurrentLocation().getUniqueIdentifier());
-       //System.out.println("           p.getTargetLocation() " + p.getTargetLocation().getUniqueIdentifier());
+//        System.out.println("           uber currently at  " + this.current.getName());
+//       System.out.println("           p.getCurrentLocation() " + p.getCurrentLocation().getUniqueIdentifier());
+//       System.out.println("           p.getTargetLocation() " + p.getTargetLocation().getUniqueIdentifier());
        this.setArriving();
+//       System.out.println("destination_pickup " + destination_pickup.getName());
+//       System.out.println(this.distanceMap.get(current).get(destination_pickup));
+
        this.currDistToTravel = this.distanceMap.get(current).get(destination_pickup);
+       // System.out.println("curr distance to travel set at - " +this.currDistToTravel);
        this.allDistancesTravelled.add(this.currDistToTravel);
        pass.setWaiting();
     }
@@ -87,8 +93,8 @@ public class Uber {
     //updates distance AND vacancy times
     public void updateDistance(){
         //num indicates which method of traversal the uber will use!!!!!
-
         if(this.isVacant()) {
+            //System.out.println("the uber is vacant, curr distance is " + this.currDistToTravel);
             this.currVacancyTime++;
             setVacancyPattern();        //need to decide movment pattern
             this.currDistToTravel--;
@@ -96,6 +102,7 @@ public class Uber {
         }
 
         if (!this.isVacant()) { //assuming that each increment of currTripTime you travel one unit of distance
+            //System.out.println("the uber is NOT vacant, curr distance is " + this.currDistToTravel);
             this.currTripTime++;
             this.currDistToTravel--;
             checkCurrDistToTravel();
@@ -103,8 +110,10 @@ public class Uber {
     }
 
     private void setVacancyPattern() {
+        //System.out.println("     setting vacancy pattern");
         if (!patternSet) {
             if (this.movementPattern.equals(random_movement_vacant)) {
+                //System.out.println("     random movement vacany pattern");
                 randomMovement();
             } else if (this.movementPattern.equals(high_concentration_movement)) {
                 highConcentrationMovement();
@@ -117,6 +126,7 @@ public class Uber {
     }
 
     private void checkCurrDistToTravel() {
+        //System.out.println("current distance to travel is :" + this.currDistToTravel);
         if (this.currDistToTravel <= 0) {
             if (this.enRoutePickup) {                             // means client has been picked up
                 this.enRoutePickup = false;
@@ -151,8 +161,10 @@ public class Uber {
 
     // VACANCY METHOD 2: Random Movement While Waiting/Vacant
     private void randomMovement(){
+        //System.out.println("in rancom movement ");
         this.destination_pickup = allLocationsList.get(new Random().nextInt(allLocations.size()));
         this.currDistToTravel = this.distanceMap.get(this.current).get(destination_pickup);
+        //System.out.println("set this.currDistToTravel " + this.currDistToTravel );
      }
 
      
@@ -160,9 +172,10 @@ public class Uber {
     //TODO doff numbers of ubers go to differnet top locations
     private void highConcentrationMovement(){
 
-        int i = UberHandler(g,);
+        //int i = UberHandler(g,);
+        int i =0;
 
-        this.destination_pickup = this.topLocations.get(i);
+        this.destination_pickup = g.getPopularLocations().get(i);
         this.currDistToTravel = this.distanceMap.get(current).get(destination_pickup);
     }
 
@@ -219,6 +232,9 @@ public class Uber {
         //System.out.println("this.allTripTimes.size() is == " + this.allTripTimes.size());
         //System.out.println("(total)/((double)this.allTripTimes.size()) is == " + (total)/((double)this.allTripTimes.size()));
         return (total)/((double)this.allTripTimes.size());
+    }
+    public Location getCurrLocation() {
+        return this.current;
     }
 
     //printing data

@@ -7,57 +7,74 @@ import java.util.*;
  */
 public class Timer {
     private int time;
-    private HashMap<Uber,Boolean> allUbers;
-    private List<RideRequest> allRideReq;
     private UberHandler myHandler;
 
-    Timer(Graph g, HashMap<Uber,Boolean> ubas, List<RideRequest> rq, UberHandler hand){
+    Timer(UberHandler hand, RequestGenerator rqgen){
         this.time = 0;
-        this.allUbers = ubas;
-        this.allRideReq = rq;
         this.myHandler = hand;
-
-        ticker();
+        System.out.println("Starting Timer...");
+        ticker(rqgen);
     }
 
 
     //updates the distances of the ubers in progress
     //updates the status of ride requests
     //adds new requests in on time
-    public void ticker(){
+    public void ticker(RequestGenerator rqgen){
         //TODO: Check if the request is active by using : isActiveRequest
-        while(traversalIncomplete()){
+        while(traversalIncomplete(rqgen)){
             //printUberStatus();
             //old: assignUbers();
 
             this.myHandler.assignUbers(this.time);
 
+            rqgen.getGraphFromGenerator().updateNumberOfPassengers(rqgen.getRequestPassengers());
+
             this.time++;
 
-            System.out.println("Clock is at: " + this.time);
-
+            System.out.println("    Clock at: " + this.time);
+            printRideReqStatus(rqgen.getRequests());
             this.myHandler.updateAllUbers(); //calls "update distance"
 
 
         }
-        //printRideReqStatus();
     }
 
-    private boolean traversalIncomplete(){
+    private boolean traversalIncomplete(RequestGenerator rq){
         //first check: checking uber progress
-        for (Uber u : this.allUbers.keySet()){
+        for (Uber u : this.myHandler.getAllUbers()){
             if (u.inRide() || u.isArriving()){
                 return true;
             }
         }
         //second check: checking no ride requests left
-        for (RideRequest r : this.allRideReq){
+        for (RideRequest r : rq.getRequests()){
             if (!r.isAssigned()){ //request not assigned yet -> there are some left
                 return true;
             }
         }
         return false;
     }
-
+    private void printRideReqStatus(List<RideRequest> all){
+        int count=0;
+        int c2=0;
+        int o=0;
+        System.out.println("PRINTING STATUS OF ALL RIDE REQ ===================");
+        for(RideRequest u : all){
+            if (u.isComplete()) {
+                count++;
+            }
+            if (u.isinProgress()) {
+                c2++;
+            }
+            if (!u.isAssigned() && !u.isComplete() && !u.isinProgress() ) {
+                o++;
+            }
+            //System.out.println("    - RideReq for passenger " + u.getPassenger().getID() + " has been assigned? " + u.isAssigned());
+        }
+        System.out.println("NUMBER OF REQUESTS IOMPLETED: " + count);
+        System.out.println("NUMBER OF REQUESTS IN PROGRESS: " + c2);
+        System.out.println("NUMBER OF REQUESTS INCOMPLETED/LEFT: " + o);
+    }
 
 }

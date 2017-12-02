@@ -7,14 +7,19 @@ public class UberHandler {
     private List<Uber> allUbersList;
     private Graph graph;
     private HashMap<Uber,Boolean> allUbers;
+    private List<RideRequest> allRideReq;
 
 
-    UberHandler(Graph g, List<Uber> ub, HashMap<Uber,Boolean> ub2) {
+    UberHandler(Graph g, List<Uber> ub, HashMap<Uber,Boolean> ub2, List<RideRequest> rr) {
         this.allUbersList = ub;
         this.allUbers = ub2;
         this.graph = g;
+        this.allRideReq = rr;
     }
 
+    public List<Uber> getAllUbers(){
+        return this.allUbersList;
+    }
 
     public void updateAllUbers(){
         for (Uber u : this.allUbersList){
@@ -30,7 +35,6 @@ public class UberHandler {
             if(  !rideReq.isAssigned()  &&  rideReq.isActiveRequest(timerTime)  ){ //if it hasnt been assigned and its active now
                 if (atLeastOneUberAvailable()){
                     Uber u = getRandomValidUber();
-                    //substitute
                     u.assignedClient(rideReq.getPassenger());
 
                     //old
@@ -45,17 +49,18 @@ public class UberHandler {
     }
 
 
-    private int getNumAvailableUbers(){
+    public int getNumAvailableUbers(){
         int count=0;
-        for (Uber eachUb: this.allUbers) {
+        for (Uber eachUb: this.allUbersList) {
             if (eachUb.isVacant()) {
                 count++;
             }
         }
         return count;
     }
-    //number of uber available has to be greater than 1, if not skip
+
     private boolean atLeastOneUberAvailable(){
+        //number of uber available has to be greater than 1, if not skip
         for(Uber each: this.allUbers.keySet()){
             if (each.isVacant()){
                 return true;
@@ -72,9 +77,9 @@ public class UberHandler {
     }
     private Uber getRandomUber(){
         int randomNum = new Random().nextInt(allUbersList.size());
-        return allUbersList.get(randomNum);
+        Uber a = allUbersList.get(randomNum);
+        return a;
     }
-
 
 
 
@@ -94,4 +99,24 @@ public class UberHandler {
         }
         return numUbersSent_1;
     }
+
+
+
+    public void deactivateUbers(){
+        for (Uber each: allUbers.keySet()){
+            each.shutDownUber();
+        }
+        //print final data
+        printFinalUberVacancies();
+    }
+    private void printFinalUberVacancies(){
+        System.out.println("PRINTING VACANCY DATA ===================");
+        for(Uber u : allUbers.keySet()){
+            u.printNumberofRides();
+            System.out.println();
+        }
+    }
+
+
+
 }

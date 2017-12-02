@@ -7,6 +7,8 @@ public class Graph {
     public HashMap<Road, Boolean> edgeSet = new HashMap<>();
     public List<Road> edgeSetList;
     public List<Location> locationSetList;
+    private HashMap<String, Location> locationNameMapping = new HashMap<>();
+    private List<Location> topLocations;
     private HashMap<Location,HashMap<Location,Double>> distanceMap = new HashMap<>();
 
 
@@ -31,25 +33,31 @@ public class Graph {
     Location StateHouse;
 
 
-    Graph (String timeOfDay) {
+    Graph (String timeOfDay, double[][] arr, String[] names ) {
         initNodes();
         if(timeOfDay.equals(avg)){
             initAvgEdges();
+        } else  {
+            initOthers(arr,names);
         }
 
         Dijkstra dj = new Dijkstra(this);
         this.distanceMap = dj.getDistanceMap();
+        System.out.print ("Simulation for : " + timeOfDay + "  ||  ");
+        System.out.print ("Number of Locations: " + locationSetList.size() + "  ||  ");
+        System.out.print ("Number of Roads: " + edgeSetList.size() + "  ||  ");
+
     }
 
     private void initNodes(){
-        Harborwalk = new Location("Harborwalk, WaterFront");
-        Hanover = new Location("200 Hanover St");
-        Commercial = new Location("Commercial St - NorthEnd");
-        SnowHill = new Location("SnowHill - NorthEnd");
-        Stillman = new Location("Stillman St - NorthEnd");
-        Causeway = new Location("Causeway St - WestEnd");
-        Blossom = new Location("Blossom St - WestEnd");
-        Charles = new Location("Charles St - Beacon Hill");
+        Harborwalk = new Location("Harborwalk");
+        Hanover = new Location("Hanover St.");
+        Commercial = new Location("Commercial St.");
+        SnowHill = new Location("Snow Hill St.");
+        Stillman = new Location("Stillman St.");
+        Causeway = new Location("Causeway St. - West End");
+        Blossom = new Location("Blossom St. - West End");
+        Charles = new Location("Charles St. - Beacon Hill");
         CharlesRiver = new Location("Charles River Esplanade");
         StateHouse = new Location("MA State House - Beacon Hill");
 
@@ -65,6 +73,11 @@ public class Graph {
         locationSet.put(CharlesRiver, 0.0);
         locationSet.put(StateHouse, 0.0);
         locationSetList = new ArrayList<Location>(locationSet.keySet());
+
+        //init name mapping
+        for (Map.Entry<Location,Double> each: locationSet.entrySet() ){
+            locationNameMapping.put(each.getKey().getName(),each.getKey());
+        }
     }
     private void initAvgEdges(){
         //Harborwalk to all other
@@ -300,6 +313,38 @@ public class Graph {
         edgeSetList = new ArrayList<Road>(edgeSet.keySet());
     }
 
+
+    private void printl(String[] namesOrdering){
+        System.out.println("printing the locations we have");
+        for (String s : namesOrdering) {
+            System.out.print(s);
+        }
+        System.out.println();
+
+        for (String s : locationNameMapping.keySet()) {
+            System.out.print(s);
+
+        }
+
+    }
+
+    private void initOthers(double[][] arr, String[] namesOrdering){
+        //printl(namesOrdering);
+        for (int i = 0; i < arr.length; i++) {
+            //hardcoding :
+            if (namesOrdering[i].trim().equals("\uFEFFHarborwalk")) {
+                namesOrdering[i] = "Harborwalk";
+            }
+
+            Location from = locationNameMapping.get(namesOrdering[i].trim());
+            for (int j = 0; j < arr[i].length; j++) {
+                Location to = locationNameMapping.get(namesOrdering[j].trim()); //get the location object with the name
+                edgeSet.put(new Road(from, to, arr[i][j]), null);
+            }
+        }
+        edgeSetList = new ArrayList<Road>(edgeSet.keySet());
+    }
+
     public HashMap<Location, Double> getAllLocations() {
         return this.locationSet;
     }
@@ -313,30 +358,68 @@ public class Graph {
         return this.edgeSetList;
     }
 
+    //counts the passengers by their locaiton so that locationSet has updated counts of passengers
     public void updateNumberOfPassengers(List<Passenger> pass){
-
         for (Passenger p  : pass){
-            if (!p.completedRide()){
+            if (p.requestedUber()){
                 locationSet.put(p.getCurrentLocation(),locationSet.get(p.getCurrentLocation())+1);
             }
         }
+
+        //System.out.println("printing the number of passengers per location ::::");
+        for (Map.Entry<Location,Double> each : locationSet.entrySet()) {
+            //System.out.println(each.getKey().getName() + " = " + each.getValue());
+        }
+
+        updatePopularLocations();
+
+
+
     }
+
     public HashMap<Location,HashMap<Location,Double>> getDistanceMap(){
         return this.distanceMap;
     }
-    public List<Location> getPopularLocations(){
-        TreeMap<Location, Integer> sortedMap = new TreeMap<Location, Integer>();
-        for (Map.Entry entry : this.distanceMap.entrySet()) {
-            sortedMap.put((Location) entry.getValue(), (Integer)entry.getKey());
-        }
 
-        List<Location> li = new ArrayList<>();
-        for (Location e : sortedMap.keySet()){
-            System.out.println("sorted location #"+ e.getUniqueIdentifier() + " with " + e.getmyPeople().size() + " ppl ");
-            li.add(e);
+    private static HashMap sortByValues(HashMap map) {
+        List list = new LinkedList(map.entrySet());
+        // Defined Custom Comparator here
+        Collections.sort(list, new Comparator() {
+            public int compare(Object o1, Object o2) {
+                return ((Comparable) ((Map.Entry) (o1)).getValue())
+                        .compareTo(((Map.Entry) (o2)).getValue());
+            }
+        });
+        HashMap sortedHashMap = new LinkedHashMap();
+        for (Iterator it = list.iterator(); it.hasNext();) {
+            Map.Entry entry = (Map.Entry) it.next();
+            sortedHashMap.put(entry.getKey(), entry.getValue());
         }
-        return li;
+        return sortedHashMap;
+    }
+    public List<Location> getPopularLocations(){return this.topLocations;}
+
+    public void updatePopularLocations(){
+        Map<Location,Double > sortedMap = sortByValues(this.locationSet);
+        //System.out.println("locatin set size: " + this.locationSet.size());
+        topLocations = new ArrayList<>();
+        for (Location e : sortedMap.keySet()){
+            //System.out.println("sorted location #"+ e.getName() + " with " + e.getmyPeople().size() + " ppl ");
+            topLocations.add(e);
+        }
     }
 
 
+
+    public void printDistanceMap() {
+        System.out.println("PRINTING DISTANCE MAPPING ===================");
+        for (Map.Entry<Location, HashMap<Location,Double>> each : this.distanceMap.entrySet()) {
+            Location l1 = each.getKey();
+            HashMap<Location, Double> mapped = each.getValue();
+            System.out.println("Location " + l1.getName() + " mapped to:");
+            for(Map.Entry<Location,Double>  e : mapped.entrySet()){
+                System.out.println("    - Location " + e.getKey().getName() + " w/ distance: " + e.getValue());
+            }
+        }
+    }
 }

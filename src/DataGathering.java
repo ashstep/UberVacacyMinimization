@@ -50,7 +50,6 @@ public class DataGathering {
             vac.add(each.getNumVacancies());             //adding number of vacancies
             occupiedAmt.add(each.getTripTimes().size()); //adding number of trips
             occupiedTimes.add(each.getAvgOccupiedTime());
-            compensation.add(each.getTotalCompensation());
 
         }
 

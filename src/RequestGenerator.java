@@ -16,17 +16,18 @@ import java.util.*;
 public class RequestGenerator {
 
     private List<Integer> activationTimes;
-    private List<Integer> latitudes;
-    private List<Integer> longitudes;
+    private List<Double> latitudes;
+    private List<Double> longitudes;
     private List<Location> graphLocations;
 
     private List<RideRequest> allRideReq;
     private List<Passenger> allPassengers;
+    private Graph graph;
 
     //generate all the ride requests, set activation time, create passenger
     //pass in 1) list of times (for the request itself)
     //
-    RequestGenerator(Graph g, List<Integer> times, List<Integer> lats, List<Integer> longs){
+    RequestGenerator(Graph g, List<Integer> times, List<Double> lats, List<Double> longs){
 
         if(times.size()!=lats.size() || times.size()!=longs.size() || longs.size()!=lats.size()){
             System.out.println("WARNING from Request Generator: Sizes of inputs are different.");
@@ -40,9 +41,11 @@ public class RequestGenerator {
         this.allRideReq = new ArrayList<>();
         this.allPassengers = new ArrayList<>();
 
+        this.graph = g;
 
         initReq();
         g.updateNumberOfPassengers(allPassengers);
+        System.out.println("All Requests have been initialized, exiting Request Generator");
     }
 
     private void initReq(){
@@ -59,6 +62,11 @@ public class RequestGenerator {
             allRideReq.add(adding);
             allPassengers.add(p);
         }
+
+        //confirmation
+        System.out.print("Number of Passengers: " + allPassengers.size()+ "  ||  ");
+        System.out.println("Number of Requests: " + allRideReq.size());
+
     }
 
     private Location getRandomLocation(){
@@ -72,6 +80,9 @@ public class RequestGenerator {
     }
     public List<Passenger> getRequestPassengers() {
         return this.allPassengers;
+    }
+    public Graph getGraphFromGenerator() {
+        return this.graph;
     }
 
     //random location passengers
@@ -101,5 +112,6 @@ public class RequestGenerator {
 //        //update locations
 //        updateLocationMap();
 //    }
+
 
 }

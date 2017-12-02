@@ -19,10 +19,13 @@ public class RideRequest {
     public boolean isAssigned(){
         return this.assigned;
     }
+    public boolean isinProgress(){return this.requestor.isinUber() ||this.requestor.requestedUber();}
     public Passenger getPassenger(){
         return this.requestor;
     }
-
+    public boolean isComplete() {
+        return this.requestor.completedRide();
+    }
     public boolean isActiveRequest(int currentTime){
         if (this.activationTime<=currentTime) {
             requestor.setRequestedUber();

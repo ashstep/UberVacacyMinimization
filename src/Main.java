@@ -8,7 +8,6 @@
 import java.util.*;
 
 public class Main {
-    int time=0;
     public HashMap<Road, Boolean> allRoads;
     List<Road> allRoadsList;
     public HashMap<Location, Double> allNodes;
@@ -129,31 +128,34 @@ public class Main {
 
 
 
-
+//TODO did i put this in the right place???
     public void assignUberPassenger(Uber u, Passenger p){
         //System.out.println("assigning uber " + u.getID() + " status -"+u.getStatus()+"- to passenger " + p.getID());
-        u.assignedClient(p, mapOfDistances);
+       // u.assignedClient(p, mapOfDistances);
         //System.out.println("           updating uber " + u.getID() + " status -"+u.getStatus());
     }
 
-    //number of uber available has to be greater than 1, if not skip
-    private boolean atLeastOneUberAvailable(){
-        for(Uber each: allUbers.keySet()){
-            if (each.isVacant()){
-                return true;
-            }
-        }
-        return false;
-    }
 
 
-    public void deactivateUbers(){
-        for (Uber each: allUbers.keySet()){
-            each.shutDownUber();
-        }
-        //print final data
-        printFinalUberVacancies();
-    }
+
+//    //number of uber available has to be greater than 1, if not skip
+//    private boolean atLeastOneUberAvailable(){
+//        for(Uber each: allUbers.keySet()){
+//            if (each.isVacant()){
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
+//
+//
+//    public void deactivateUbers(){
+//        for (Uber each: allUbers.keySet()){
+//            each.shutDownUber();
+//        }
+//        //print final data
+//        printFinalUberVacancies();
+//    }
 
     //returns if you are done
 //    public boolean traversalIncomplete(){
@@ -203,35 +205,22 @@ public class Main {
 //        initRandomUber(numUbers, s);
 //        initPassengers(numPassenger);
 
-        System.out.print ("Number of Locations: " + allNodes.size() + "  ||  ");
-        System.out.print("Number of Ubers: " + allUbers.size()+ "  ||  ");
-        System.out.print("Number of Passengers: " + allPassengers.size()+ "  ||  ");
+
 
 
         //Dijkstra dj = new Dijkstra(allNodes,g);
-        mapOfDistances = dj.getDistanceMap();
+        //mapOfDistances = dj.getDistanceMap();
         //printDistanceMap();
         //printFinalUberVacancies();
         //printPassengerLocation();
-        time();
+        //time();
         //printPassengerLocation();
-        deactivateUbers();
+        //deactivateUbers();
     }
 
 
 
     /// ================== PRINTING ITEMS ==================
-    private void printDistanceMap() {
-        System.out.println("PRINTING DISTANCE MAPPING ===================");
-        for (Map.Entry<Location, HashMap<Location,Double>> each : mapOfDistances.entrySet()) {
-            Location l1 = each.getKey();
-            HashMap<Location, Double> mapped = each.getValue();
-            System.out.println("Location " + l1.getUniqueIdentifier() + " mapped to:");
-            for(Map.Entry<Location,Double>  e : mapped.entrySet()){
-                System.out.println("    - Location " + e.getKey().getUniqueIdentifier() + " w/ distance: " + e.getValue());
-            }
-        }
-    }
     private void printUberStatus(){
         System.out.println("PRINTING STATUS OF ALL UBERS ===================");
         for(Uber u : allUbers.keySet()){
@@ -244,27 +233,34 @@ public class Main {
             System.out.println("    - Passenger " + u.getID() +" is currently " + u.getStatus()+ " and is currently at: " + u.getCurrentLocation().getUniqueIdentifier() + " and would like to go " + u.getTargetLocation().getUniqueIdentifier());
         }
     }
-    private void printRideReqStatus(){
-        System.out.println("PRINTING STATUS OF ALL RIDE REQ ===================");
-        for(RideRequest u : allRideReq.keySet()){
-            System.out.println("    - RideReq for passenger " + u.getPassenger().getID() + " has been assigned? " + u.isAssigned());
-        }
-    }
-    private void printFinalUberVacancies(){
-        System.out.println("PRINTING VACANCY DATA ===================");
-        for(Uber u : allUbers.keySet()){
-            u.printNumberofRides();
-            System.out.println();
-        }
-    }
+
 
 
     public static void main(String args[]) {
-        // we want to see trends for daily average
-        Graph g = new Graph("DAILY_AVERAGE");
 
-        //this is the data we are using
-        CSVReader reader = new CSVReader("/Users/Ashka/Documents/Workspace/Uber/src/aug14.csv");
+
+        //data to choose from for ubers
+        CSVReader reader = new CSVReader("/Users/Ashka/Documents/Workspace/Uber/src/UberData/aug14.csv", "UBER");
+
+        //comment out data u dont want to use
+//        CSVReader location = new CSVReader("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/am-peak.csv", "LOCATION"); //AM
+//        CSVReader location = new CSVReader("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/pm_peak.csv", "LOCATION"); //PM
+//        CSVReader location = new CSVReader("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/middayTimes.csv", "LOCATION"); //MIDDAY
+//        CSVReader location = new CSVReader("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/evening_times.csv", "LOCATION"); //EVENING
+        CSVReader location = new CSVReader("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/earlymorning.csv", "LOCATION"); //EARLY MORNING
+
+        //comment out graphs u dont want to use
+//        Graph g = new Graph("AM_PEAK", location.getAm_times(), location.getlocationNames());
+        Graph g = new Graph("PM_PEAK", location.get_times(), location.getlocationNames());
+//        Graph g = new Graph("MIDDAY", location.get_times(), location.getlocationNames());
+//        Graph g = new Graph("EVENING", location.get_times(), location.getlocationNames());
+//        Graph g = new Graph("EARLY_MORNING", location.get_times(), location.getlocationNames());
+//        Graph g = new Graph("DAILY_AVERAGE", location.get_times(), location.getlocationNames());
+
+
+
+
+
 
         //creating the ride requests
         RequestGenerator reqGenerator = new RequestGenerator(g, reader.getActivationTimes(), reader.getLats(), reader.getLongs());
@@ -273,17 +269,22 @@ public class Main {
 
 
         //input: number of ubers, creation method, movement method
-        UberGenerator uberGenerator = new UberGenerator(g, 1000, "RANDOM", "IN_PLACE_MOVEMENT");
+        UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "RANDOM_VACANT_MOVEMENT");
         List<Uber> allUberList = uberGenerator.getAllUbersList();
         HashMap<Uber, Boolean> allUbers = uberGenerator.getAllUbers();
 
-        UberHandler uberHandler = new UberHandler(g,allUberList);
 
-        uberHandler.updateAllUbers //each time iteration
+        UberHandler uberHandler = new UberHandler(g,allUberList,uberGenerator.getAllUbers(),requestList);
+
+        //uberHandler.updateAllUbers(); //each time iteration
 
 
-        Timer t = new Timer(g,allUbers,allUberList,requestList);
+        Timer t = new Timer(uberHandler,reqGenerator);
+        System.out.println("Exiting Timer...");
 
+        //when completed traversal / iteration
+        uberHandler.deactivateUbers();
+        System.out.println("Ubers deactivated...");
 
 
 
