@@ -43,6 +43,15 @@ public class RequestGenerator {
 
         this.graph = g;
 
+        System.out.println();
+        System.out.print("all activation times : ");
+        //prnting them
+        for (int each : this.activationTimes) {
+            System.out.print(each+ ", ");
+        }
+
+
+
         initReq();
         g.updateNumberOfPassengers(allPassengers);
         System.out.println("All Requests have been initialized, exiting Request Generator...");

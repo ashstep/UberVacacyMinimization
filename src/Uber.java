@@ -39,9 +39,10 @@ public class Uber {
     private final String inPlace = "IN_PLACE";
     private final String random_movement_vacant = "RANDOM_VACANT_MOVEMENT";
     private final String high_concentration_movement = "HIGH_CONCENTRATION_MOVEMENT";
-    private final String search_vicinity_movement= "SEARCH_VICINITY_MOVEMENT";
+    private final String search_vicinity_movement= "SEARCH_VICINITY";
     private boolean patternSet;
     private Graph g;
+    private TreeMap<Double, RideRequest> mapOfNearestReq;
 
 
     Uber(Graph g, Location start, String movementPattern) {
@@ -65,6 +66,8 @@ public class Uber {
         this.allLocations = g.getAllLocations();
         this.allLocationsList = g.getAllLocationsAsList();
         this.distanceMap = g.getDistanceMap();
+        this.mapOfNearestReq = new TreeMap<Double, RideRequest>();
+
 
     }
 
@@ -239,7 +242,13 @@ public class Uber {
     public Location getCurrLocation() {
         return this.current;
     }
-
+    public String getMovementPattern(){return this.movementPattern;}
+    public void setMapOfNearestReq(TreeMap<Double, RideRequest> map){
+        this.mapOfNearestReq = map;
+    }
+    public TreeMap<Double, RideRequest> getMapOfNearestReq(){
+        return this.mapOfNearestReq;
+    }
     //printing data
     public void printNumberofRides(){
         System.out.println("UBER #" + this.getID());

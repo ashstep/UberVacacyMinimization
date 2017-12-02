@@ -40,7 +40,7 @@ public class UberGenerator {
         } else {
             concentratedLocationGeneration();
         }
-        System.out.println("All Ubers initialized using intialization method: " + creationMethod  + " and vacant traversal behavior: " + traversalBehavior + ". Exiting Uber Generator...");
+        System.out.println("All " + this.numberOfUbers +" Ubers initialized using intialization method: " + creationMethod  + ", and vacant-traversal-behavior: " + traversalBehavior + ". Exiting Uber Generator...");
 
     }
 

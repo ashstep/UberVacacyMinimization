@@ -33,8 +33,9 @@ public class CSVReader {
             //data
             System.out.println("Inputting Location Data...");
             locationGenerator(indicator);
+            System.out.print ("Simulation for : " + indicator + "  ||  ");
         }
-        System.out.print ("Simulation for : " + indicator + "  ||  ");
+
     }
     private void locationGenerator( String time){
         if (time.equals(am)) {

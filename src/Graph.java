@@ -301,7 +301,7 @@ public class Graph {
         edgeSetList = new ArrayList<Road>(edgeSet.keySet());
     }
 
-
+//printing the locations we have
     private void printl(String[] namesOrdering){
         System.out.println("printing the locations we have");
         for (String s : namesOrdering) {
@@ -348,15 +348,17 @@ public class Graph {
 
     //counts the passengers by their locaiton so that locationSet has updated counts of passengers
     public void updateNumberOfPassengers(List<Passenger> pass){
+        int c=0;
         for (Passenger p  : pass){
             if (p.requestedUber()){
+                c++;
                 locationSet.put(p.getCurrentLocation(),locationSet.get(p.getCurrentLocation())+1);
             }
         }
-
-        //System.out.println("printing the number of passengers per location ::::");
+        System.out.println("count for passengers generated: " + c);
+        System.out.println("printing the number of passengers per location ::::");
         for (Map.Entry<Location,Double> each : locationSet.entrySet()) {
-            //System.out.println(each.getKey().getName() + " = " + each.getValue());
+            System.out.println(each.getKey().getName() + " = " + each.getValue());
         }
 
         updatePopularLocations();

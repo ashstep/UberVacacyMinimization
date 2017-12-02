@@ -3,18 +3,21 @@
  */
 public class RideRequest {
     private Passenger requestor;
-    private Uber driver;
     private boolean assigned;
     private int activationTime;
-
+    private boolean active;
 
     RideRequest(Passenger p, int activationTime) {
         this.requestor = p;
         this.assigned = false;
         this.activationTime = activationTime;
+        this.active = false;
     }
     public void setAssigned(){
         this.assigned = true;
+    }
+    public void setActive(){
+        this.active = true;
     }
     public boolean isAssigned(){
         return this.assigned;
@@ -29,9 +32,17 @@ public class RideRequest {
     public boolean isActiveRequest(int currentTime){
         if (this.activationTime<=currentTime) {
             requestor.setRequestedUber();
-            this.setAssigned();
+            this.setActive();
             return true;
         }
         return false;
     }
+    public int getActivationTime(){
+        return this.activationTime;
+    }
+    public boolean getActive(){
+        return (this.active == true);
+    }
+    public Location getPassengerLocation(){return this.requestor.getCurrentLocation();}
+
 }

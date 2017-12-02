@@ -26,7 +26,7 @@ public class Main {
 
 
     public static void main(String args[]) {
-        //data to choose from for ubers
+        //data to choose from for ride request generation
         CSVReader reader = new CSVReader("UBER", "NONE");
 
         //comment out data u dont want to use
@@ -41,7 +41,7 @@ public class Main {
         List<Passenger> passengerList = reqGenerator.getRequestPassengers();
 
         //input: number of ubers, creation method, movement method
-        UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "RANDOM_VACANT_MOVEMENT");
+        UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "RANDOM_MOVEMENT");
         List<Uber> allUberList = uberGenerator.getAllUbersList();
         HashMap<Uber, Boolean> allUbers = uberGenerator.getAllUbers();
 
@@ -53,7 +53,8 @@ public class Main {
         t.getTime();//printing final time
 
         //when completed traversal / iteration
-        uberHandler.deactivateUbers(); // printing final values
+        //TODO UNCOMMENT THIS
+        //uberHandler.deactivateUbers(); // printing final values
         System.out.println("Ubers deactivated...");
 
 

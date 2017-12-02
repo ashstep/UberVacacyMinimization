@@ -24,11 +24,11 @@ public class Timer {
         //TODO: Check if the request is active by using : isActiveRequest
         while(traversalIncomplete(rqgen)){
             //printUberStatus();
-            //old: assignUbers();
 
             this.myHandler.assignUbers(this.time);
 
             rqgen.getGraphFromGenerator().updateNumberOfPassengers(rqgen.getRequestPassengers());
+            //rqgen.getGraphFromGenerator().
 
             this.time++;
 

@@ -3,7 +3,6 @@
  */
 public class Passenger {
 //  TODO havent touched these yet
-    int searchVicinity = 0;
     int waitingForAssignment=0;
 
     private int id=0;
@@ -32,8 +31,6 @@ public class Passenger {
     public void assignRequest(RideRequest re){
         this.myRequest = re;
     }
-
-
     public Location getCurrentLocation(){
         return this.currentLocation;
     }
