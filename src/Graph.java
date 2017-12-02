@@ -12,14 +12,6 @@ public class Graph {
     private HashMap<Location,HashMap<Location,Double>> distanceMap = new HashMap<>();
 
 
-    //possible graphs to generate
-    private final String avg = "DAILY_AVERAGE";
-    private final String am = "AM_PEAK";
-    private final String pm = "PM_PEAK";
-    private final String midday = "MIDDAY";
-    private final String evening = "EVENING";
-    private final String morn = "EARLY_MORNING";
-
     //locations will not change -> global variable is okay
     Location Harborwalk;
     Location Hanover;
@@ -32,18 +24,14 @@ public class Graph {
     Location CharlesRiver;
     Location StateHouse;
 
+    //TODO fix for the average indicator!!!!
 
-    Graph (String timeOfDay, double[][] arr, String[] names ) {
+    Graph (double[][] arr, String[] names ) {
         initNodes();
-        if(timeOfDay.equals(avg)){
-            initAvgEdges();
-        } else  {
-            initOthers(arr,names);
-        }
+        initOthers(arr,names);
 
         Dijkstra dj = new Dijkstra(this);
         this.distanceMap = dj.getDistanceMap();
-        System.out.print ("Simulation for : " + timeOfDay + "  ||  ");
         System.out.print ("Number of Locations: " + locationSetList.size() + "  ||  ");
         System.out.print ("Number of Roads: " + edgeSetList.size() + "  ||  ");
 

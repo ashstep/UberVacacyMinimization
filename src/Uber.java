@@ -41,11 +41,7 @@ public class Uber {
     private final String high_concentration_movement = "HIGH_CONCENTRATION_MOVEMENT";
     private final String search_vicinity_movement= "SEARCH_VICINITY_MOVEMENT";
     private boolean patternSet;
-
-    private UberHandler myHandler;
     private Graph g;
-
-
 
 
     Uber(Graph g, Location start, String movementPattern) {
@@ -94,7 +90,7 @@ public class Uber {
     public void updateDistance(){
         //num indicates which method of traversal the uber will use!!!!!
         if(this.isVacant()) {
-            //System.out.println("the uber is vacant, curr distance is " + this.currDistToTravel);
+//            System.out.println("the uber #" + this.getID()+" is vacant, curr distance is " + this.currDistToTravel);
             this.currVacancyTime++;
             setVacancyPattern();        //need to decide movment pattern
             this.currDistToTravel--;
@@ -102,7 +98,7 @@ public class Uber {
         }
 
         if (!this.isVacant()) { //assuming that each increment of currTripTime you travel one unit of distance
-            //System.out.println("the uber is NOT vacant, curr distance is " + this.currDistToTravel);
+//            System.out.println("the uber is NOT vacant, curr distance is " + this.currDistToTravel);
             this.currTripTime++;
             this.currDistToTravel--;
             checkCurrDistToTravel();
@@ -110,10 +106,9 @@ public class Uber {
     }
 
     private void setVacancyPattern() {
-        //System.out.println("     setting vacancy pattern");
         if (!patternSet) {
+            //System.out.println("     vacancy pattern not set");
             if (this.movementPattern.equals(random_movement_vacant)) {
-                //System.out.println("     random movement vacany pattern");
                 randomMovement();
             } else if (this.movementPattern.equals(high_concentration_movement)) {
                 highConcentrationMovement();
@@ -147,11 +142,13 @@ public class Uber {
                 this.allTripTimes.add(this.currTripTime);
                 this.p.setCompletedRide();
                 this.p = null;                                    //no passenger now
+                this.patternSet = false;
             } else {
                 //if reached destination and its vacant  -> reset its destination based on methodology
                  this.currDistToTravel = 0;
                  this.patternSet = false;
                  this.current = destination_pickup;
+                 this.destination_pickup=null;
             }
         }
     }
@@ -161,10 +158,16 @@ public class Uber {
 
     // VACANCY METHOD 2: Random Movement While Waiting/Vacant
     private void randomMovement(){
-        //System.out.println("in rancom movement ");
+//        System.out.println("     rand mvmt for uber " + this.getID() + "  vacancies"+ this.allVacancyTimes.size() );
+
         this.destination_pickup = allLocationsList.get(new Random().nextInt(allLocations.size()));
-        this.currDistToTravel = this.distanceMap.get(this.current).get(destination_pickup);
-        //System.out.println("set this.currDistToTravel " + this.currDistToTravel );
+//        System.out.print("  pickup set, find dist frmo " +this.current  );
+//        System.out.println(" aka - " + this.current.getName());
+//        System.out.println(" to  " + this.destination_pickup);
+//        System.out.println( "     dest pickup is now -  " +  this.destination_pickup.getName());
+//        System.out.println( "     curr is =   " +  this.current.getName());
+        this.currDistToTravel = this.distanceMap.get(this.current).get(this.destination_pickup);
+//        System.out.println( "     set this.currDistToTravel " + this.currDistToTravel );
      }
 
      
@@ -240,7 +243,7 @@ public class Uber {
     //printing data
     public void printNumberofRides(){
         System.out.println("UBER #" + this.getID());
-        System.out.print("    - Number of Vacancies: " + this.allVacancyTimes.size() + " -- [");
+        System.out.print( "    - "+ this.allVacancyTimes.size()   + " Vacancy(ies) with Time Duration: [");
         for (int all : getVacancyTimes()) {
             System.out.print(all + " ");
         }

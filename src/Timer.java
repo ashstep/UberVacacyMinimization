@@ -32,8 +32,8 @@ public class Timer {
 
             this.time++;
 
-            System.out.println("    Clock at: " + this.time);
-            printRideReqStatus(rqgen.getRequests());
+            //System.out.println("Clock at: " + this.time);
+            //printRideReqStatus(rqgen.getRequests());
             this.myHandler.updateAllUbers(); //calls "update distance"
 
 
@@ -62,19 +62,25 @@ public class Timer {
         System.out.println("PRINTING STATUS OF ALL RIDE REQ ===================");
         for(RideRequest u : all){
             if (u.isComplete()) {
+                //complletely finished - dropped off
                 count++;
             }
-            if (u.isinProgress()) {
+            if (u.isinProgress() || u.getPassenger().isWaiting()) {
+                //in progress of ride
                 c2++;
             }
             if (!u.isAssigned() && !u.isComplete() && !u.isinProgress() ) {
+                //untouched
                 o++;
             }
             //System.out.println("    - RideReq for passenger " + u.getPassenger().getID() + " has been assigned? " + u.isAssigned());
         }
-        System.out.println("NUMBER OF REQUESTS IOMPLETED: " + count);
-        System.out.println("NUMBER OF REQUESTS IN PROGRESS: " + c2);
-        System.out.println("NUMBER OF REQUESTS INCOMPLETED/LEFT: " + o);
+        System.out.println("    NUMBER REQ COMPLETED: " + count);
+        System.out.println("    NUMBER REQ IN PROGRESS: " + c2);
+        System.out.println("    NUMBER REQ LEFT: " + o);
     }
 
+    public void getTime(){
+        System.out.println("Time: " + this.time);
+    }
 }

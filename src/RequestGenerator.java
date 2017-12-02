@@ -45,7 +45,7 @@ public class RequestGenerator {
 
         initReq();
         g.updateNumberOfPassengers(allPassengers);
-        System.out.println("All Requests have been initialized, exiting Request Generator");
+        System.out.println("All Requests have been initialized, exiting Request Generator...");
     }
 
     private void initReq(){
@@ -84,34 +84,4 @@ public class RequestGenerator {
     public Graph getGraphFromGenerator() {
         return this.graph;
     }
-
-    //random location passengers
-//    private void initPassengersRandomly(int numofPassengers){
-//        //System.out.println("Init Passengers ------");
-//        allRideReq = new HashMap<RideRequest, Boolean>();
-//        allPassengers = new HashMap<Passenger, Boolean>();
-//        int size = allNodes.size();
-//        int randomNum, randomNum2;
-//        for (int i = 0;  i < numofPassengers; i++) {
-//            randomNum = new Random().nextInt(size);
-//            randomNum2 = new Random().nextInt(size);
-//            Location curr = this.graphLocations.get(randomNum);
-//            Location dest = this.graphLocations.get(randomNum2);
-//            //System.out.println("Passenger from: " + curr.getID() + "  going to:  " + dest.getID());
-//            Passenger new_passenger = new Passenger(curr, dest);
-//
-//            RideRequest r = new RideRequest(new_passenger);
-//            new_passenger.assignRequest(r);   //for each passenger init a request
-//            allRideReq.put(r, null);
-//            allPassengers.put(new_passenger,null);
-//
-//        }
-//        allRideReqList = new ArrayList<>(allRideReq.keySet());
-//        allPassengersList = new ArrayList<>(allPassengers.keySet());
-//
-//        //update locations
-//        updateLocationMap();
-//    }
-
-
 }

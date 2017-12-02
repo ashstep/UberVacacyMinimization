@@ -13,24 +13,53 @@ public class CSVReader {
     private ArrayList<Double> longi = new ArrayList<>();
 
     private final String uber = "UBER";
-    private final String location = "LOCATION";
+    //possible graphs to generate
+    private final String avg = "DAILY_AVERAGE";
+    private final String am = "AM_PEAK";
+    private final String pm = "PM_PEAK";
+    private final String midday = "MIDDAY";
+    private final String evening = "EVENING";
+    private final String morn = "EARLY_MORNING";
 
     private String[] locationNames;
     private double[][] times;
-//    private double[][] pm_times;
-//    private double[][] midday_times;
-//    private double[][] evening_times;
-//    private double[][] earlymorning_times;
 
 
-    CSVReader (String csvFile, String which) {
-        if (which.equals(uber)) {
+    CSVReader (String fileType, String indicator)  {
+        if (fileType.equals(uber)) {
             System.out.println("Inputting Uber Files...");
-            readUberFile(csvFile);
-        } else { //data
+            readUberFile("/Users/Ashka/Documents/Workspace/Uber/src/UberData/aug14.csv");
+        } else {
+            //data
             System.out.println("Inputting Location Data...");
-            readFile(csvFile);
+            locationGenerator(indicator);
         }
+        System.out.print ("Simulation for : " + indicator + "  ||  ");
+    }
+    private void locationGenerator( String time){
+        if (time.equals(am)) {
+            readFile("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/am-peak.csv");
+        } else if (time.equals(pm)) {
+            readFile("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/pm_peak.csv");
+        } else if (time.equals(midday)){
+            readFile("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/middayTimes.csv");
+        } else if (time.equals(evening)) {
+            readFile("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/evening_times.csv");
+        }else if (time.equals(morn)) {
+            readFile("/Users/Ashka/Documents/Workspace/Uber/src/LocationInformation/earlymorning.csv");
+
+//        } else if (time.equals(avg)) {
+//            readFile();
+//
+        }else{
+            System.out.println("WARNING: Invalid Time Period Requested");
+        }
+
+
+
+
+
+
     }
 
     private void readFile(String csvFile) {

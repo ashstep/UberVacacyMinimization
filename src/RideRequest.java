@@ -29,6 +29,7 @@ public class RideRequest {
     public boolean isActiveRequest(int currentTime){
         if (this.activationTime<=currentTime) {
             requestor.setRequestedUber();
+            this.setAssigned();
             return true;
         }
         return false;

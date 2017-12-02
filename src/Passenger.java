@@ -51,6 +51,9 @@ public class Passenger {
     public void setWaiting(){
         this.status = waitingArrival;
     }
+    public boolean isWaiting(){
+        return this.status.equals(waitingArrival);
+    }
     public void setInUber(){
         this.status =  inUber;
     }
