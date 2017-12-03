@@ -2,10 +2,6 @@ import java.util.*;
 
 /**
  * Created by Ashka on 11/15/17.
- *
- * in updateDistance -> num indicates which method the uber will use for traversal in diff situations
- *      1 = stay in place
- *      2 = random mvmnt when vacant
  */
 public class Uber {
     private double currDistToTravel;

@@ -1,14 +1,6 @@
 import java.util.*;
 /**
  * Created by Ashka on 11/30/17.
- *
- * will store all the ride requests to return
- *
- * 0 given the lat and long, get the relevant locations
- * 1 create passenger w the locations
- * 2 generate request
- *
- *
  */
 
 //TODO for now picking random lovations
@@ -26,7 +18,6 @@ public class RequestGenerator {
 
     //generate all the ride requests, set activation time, create passenger
     //pass in 1) list of times (for the request itself)
-    //
     RequestGenerator(Graph g, List<Integer> times, List<Double> lats, List<Double> longs){
 
         if(times.size()!=lats.size() || times.size()!=longs.size() || longs.size()!=lats.size()){
@@ -42,7 +33,7 @@ public class RequestGenerator {
         this.allPassengers = new ArrayList<>();
 
         this.graph = g;
-//
+//        NOTE keep this for activation time prints (this is the time that the uber is "Activated" based off of request time conversion
 //        System.out.println();
 //        System.out.print("all activation times : ");
 //        //prnting them
@@ -50,8 +41,6 @@ public class RequestGenerator {
 //            System.out.print(each+ ", ");
 //        }
 //
-
-
         initReq();
         //g.updateNumberOfPassengers(allPassengers);
         System.out.println("All Requests have been initialized, exiting Request Generator...");
@@ -60,14 +49,13 @@ public class RequestGenerator {
     private void initReq(){
         for (int i = 0; i < this.activationTimes.size(); i++){
             //generate random location for now
-            //todo fix this!!!!!! do by lats and longs actual and can pick random location for destination
+            //todo fix this -  do by lats and longs actual and can pick random location for destination
             Location a = getRandomLocation();
             Location b = getRandomLocation();
 
             Passenger p = new Passenger(a,b);
             RideRequest adding = new RideRequest(p, this.activationTimes.get(i));
-            p.assignRequest(adding); //is this necessary??
-            //System.out.println("Passenger from: " + a.getID() + "  going to:  " + b.getID());
+            p.assignRequest(adding);
             allRideReq.add(adding);
             allPassengers.add(p);
         }
@@ -82,8 +70,6 @@ public class RequestGenerator {
         int randomNum = new Random().nextInt(graphLocations.size());
         return this.graphLocations.get(randomNum);
     }
-
-    //getters
     public List<RideRequest> getRequests() {
         return this.allRideReq;
     }

@@ -11,7 +11,7 @@ import java.util.*;
 public class DataGathering {
     private List<Main> allIterations = new ArrayList<>();
 
-    //TODO this constructor
+    //TODO this
     public DataGathering(){
 
     }
@@ -19,23 +19,6 @@ public class DataGathering {
     public List<Main> getAllIterations() {
         return this.allIterations;
     }
-//    public void addAllIterations(Main m) {
-//        this.allIterations.add(m);
-//        this.analyticsFoOne(m);
-//    }
-//
-//    public void allAnalytics() {
-//        for (Main each: this. allIterations){
-//            analyticsFoOne(each);
-//        }
-//    }
-
-//    private void analyticsFoOne(Main m) {
-//        uberCalc(m.allUbersList);
-//        passengerCalc(m.allPassengersList);
-//        //other(m.time);
-//    }
-
 
     public void uberCalc (List<Uber> ubers){
         List<Integer> vac = new ArrayList<>();          // for average NUMBER of vacancies

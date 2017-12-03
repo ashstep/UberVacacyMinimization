@@ -11,7 +11,7 @@ public class Graph {
     private HashMap<Location,HashMap<Location,Double>> distanceMap = new HashMap<>();
     private List<Location> sortedLocationsByPassengerCount;
 
-    //locations will not change -> global variable is okay
+    //locations will not change -> global is okay
     Location Harborwalk;
     Location Hanover;
     Location Commercial;
@@ -24,7 +24,6 @@ public class Graph {
     Location StateHouse;
 
     //TODO fix for the average indicator!!!!
-
     Graph (double[][] arr, String[] names ) {
         initNodes();
         initOthers(arr,names);
@@ -33,7 +32,6 @@ public class Graph {
         this.distanceMap = dj.getDistanceMap();
         System.out.print ("Number of Locations: " + locationSetList.size() + "  ||  ");
         System.out.print ("Number of Roads: " + edgeSetList.size() + "  ||  ");
-
     }
 
     private void initNodes(){
@@ -300,7 +298,7 @@ public class Graph {
         edgeSetList = new ArrayList<Road>(edgeSet.keySet());
     }
 
-//printing the locations we have
+    //NOTE printing the locations we have for error checking -> delete at end
     private void printl(String[] namesOrdering){
         for (String s : namesOrdering) {
             System.out.print(s);
@@ -314,6 +312,7 @@ public class Graph {
 
     }
 
+    //used for all initializations
     private void initOthers(double[][] arr, String[] namesOrdering){
         //printl(namesOrdering);
         for (int i = 0; i < arr.length; i++) {
@@ -352,35 +351,17 @@ public class Graph {
                 locationSet.put(r.getPassenger().getStartLocation(),locationSet.get(r.getPassenger().getStartLocation())+1);
            }
         }
-
+//        NOTE: uncomment this to print the location map  (this gives us the top locations in terms of active passengers/ride requests
 //        for (Map.Entry<Location,Double> each : locationSet.entrySet()) {
 //            System.out.println("    "  + each.getKey().getName() + " = " + each.getValue());
 //        }
         updatePopularLocations();
     }
 
-
-
     public HashMap<Location,HashMap<Location,Double>> getDistanceMap(){
         return this.distanceMap;
     }
 
-    private static HashMap sortByValues(HashMap map) {
-        List list = new LinkedList(map.entrySet());
-        // Defined Custom Comparator here
-        Collections.sort(list, new Comparator() {
-            public int compare(Object o1, Object o2) {
-                return ((Comparable) ((Map.Entry) (o1)).getValue())
-                        .compareTo(((Map.Entry) (o2)).getValue());
-            }
-        });
-        HashMap sortedHashMap = new LinkedHashMap();
-        for (Iterator it = list.iterator(); it.hasNext();) {
-            Map.Entry entry = (Map.Entry) it.next();
-            sortedHashMap.put(entry.getKey(), entry.getValue());
-        }
-        return sortedHashMap;
-    }
     public List<Location> getPopularLocations(){return this.sortedLocationsByPassengerCount;}
 
     private void updatePopularLocations(){
@@ -406,8 +387,7 @@ public class Graph {
         }
     }
 
-
-
+    //NOTE for error checking - delete when done
     public void printDistanceMap() {
         System.out.println("PRINTING DISTANCE MAPPING ===================");
         for (Map.Entry<Location, HashMap<Location,Double>> each : this.distanceMap.entrySet()) {

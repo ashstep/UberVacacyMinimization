@@ -1,7 +1,5 @@
 /**
  * Created by Ashka on 11/15/17.
- *
- * METHOD 1: randomly assigning ubers
  */
 
 import java.util.*;

@@ -15,6 +15,7 @@ public class RideRequest {
         this.active = false;
         this.include = false;
     }
+    //SETTERS GETTERS
     public void setAssigned(){
         this.assigned = true;
     }
@@ -27,7 +28,6 @@ public class RideRequest {
     public void setInclude(boolean a){
          this.include = a;
     }
-
     public boolean isAssigned(){
         return this.assigned;
     }
@@ -39,7 +39,6 @@ public class RideRequest {
         return this.requestor.completedRide();
     }
     public boolean isActiveRequest(int currentTime){
-
         if (this.activationTime<=currentTime) {
             requestor.setRequestedUber();
             this.setActive();

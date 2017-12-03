@@ -12,13 +12,7 @@ public class UberGenerator {
 
     //String for where the ubers are to be generated
     private final String rand = "RANDOM";
-    private final String concentration = "CONCENTRATION";  //TODO implement that they are initialized in high concentration locations
-
-    //Uber Traversal Bahaviors_
-    private final String in_place_movement = "IN_PLACE_MOVEMENT";
-    private final String random_movement = "RANDOM_MOVEMENT";
-    private final String high_concentration_movement = "HIGH_CONCENTRATION_MOVEMENT";
-    private final String search_vicinity_movement= "SEARCH_VICINITY";
+    private final String concentration = "CONCENTRATION";  //TODO implement that they are initialized in high concentration locations ??
 
     private int graph_size;
     private Graph graph;

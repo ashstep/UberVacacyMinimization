@@ -33,9 +33,8 @@ public class UberHandler {
 
     //being called for each ride request
     private void assignmentBasedOnMethod() {
-        //randomly pick an uber
+        //METHOD 1: RANDOM UBER PICKING
         if (this.uberAllocation.equals("RANDOM_MOVEMENT")) {
-            //System.out.println("RANDOM_MOVEMENT ASSIGNMETN");
             for (RideRequest rideReq : this.allRideReq) {
                 if (!rideReq.isAssigned()  &&  rideReq.getActive()) { //if the request is active and no uber assigned
                     Uber u = getRandomValidUber();
@@ -46,14 +45,12 @@ public class UberHandler {
             }
         }
         //UBER has to search for this client -> client remains unassigned for all ride requsets not assigned -> look at closest
-
         if (this.uberAllocation.equals("SEARCH_VICINITY")) {
-            //creating the maps!!!
             for (Uber eachUber : this.allUbersList) {
                 Location l = eachUber.getCurrLocation();
                 TreeMap<Double, RideRequest> saved =  new TreeMap<Double, RideRequest>();
-                //extract this at the end
-                //calc ride req distances from suber
+                //TODO extract this at the end = refactoring
+                //NOTE this is calculating ride req distances from uber
                 for (RideRequest rideReq : this.allRideReq) {
                     if (rideReq.getActive() && !rideReq.isAssigned()){
                         Location rideLocation = rideReq.getPassengerLocation();
@@ -64,17 +61,15 @@ public class UberHandler {
                 eachUber.setMapOfNearestReq(saved);
             }
 
-            // TODO what if multuple close ubers of same dist
-            //time role plays factor
+            //time role plays factor and given priority
             for (Uber eachUber : this.allUbersList) {
                 if  (eachUber.isVacant()) {
                     if (eachUber.getMapOfNearestReq().size()!=0){
-                        //TODO going off nearest request
+                        //going off nearest request
                         RideRequest rideReq = eachUber.getMapOfNearestReq().firstEntry().getValue();
                         eachUber.assignedClient(rideReq.getPassenger());
                         rideReq.setAssigned();
                         rideReq.setInclude(false);
-
                     }
                 }
             }
@@ -83,6 +78,7 @@ public class UberHandler {
 
 
     //sets ride request as active or not
+    //NOTE comments and printing for more information below
     public void assignUbers(int timerTime){
         //printRideReqStatus();
         //printUberStatus();
@@ -99,7 +95,6 @@ public class UberHandler {
         //printUberStatus();
     }
 
-
     public int getNumAvailableUbers(){
         int count=0;
         for (Uber eachUb: this.allUbersList) {
@@ -108,16 +103,6 @@ public class UberHandler {
             }
         }
         return count;
-    }
-
-    private boolean atLeastOneUberAvailable(){
-        //number of uber available has to be greater than 1, if not skip
-        for(Uber each: this.allUbers.keySet()){
-            if (each.isVacant()){
-                return true;
-            }
-        }
-        return false;
     }
     private Uber getRandomValidUber(){
         Uber u = getRandomUber();
@@ -131,12 +116,6 @@ public class UberHandler {
         Uber a = allUbersList.get(randomNum);
         return a;
     }
-
-
-
-
-    //TODO improve this ratio calcualtion
-    //TODO this makes noooooooooo sense  LOL
     //a while loop is a better way to do this (while we have available ubers, five here, two here, one there, and repeat
     //return the number of ubers to send to each placs
     private int highConcentrationLocationDistributor(){
@@ -151,7 +130,6 @@ public class UberHandler {
         }
         return numUbersSent_1;
     }
-
     public void deactivateUbers(){
         for (Uber each: allUbers.keySet()){
             each.shutDownUber();

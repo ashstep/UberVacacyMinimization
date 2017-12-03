@@ -2,9 +2,6 @@
  * Created by Ashka on 11/15/17.
  */
 public class Passenger {
-//  TODO havent touched these yet
-    int waitingForAssignment=0;
-
     private int id=0;
     private static int count = 0;
     private Location currentLocation = null;
@@ -27,9 +24,6 @@ public class Passenger {
         this.id = count++;
     }
 
-    public int getID(){
-        return this.id;
-    }
     public void assignRequest(RideRequest re){
         this.myRequest = re;
     }

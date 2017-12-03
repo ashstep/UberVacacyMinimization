@@ -14,7 +14,6 @@ public class Dijkstra {
         calcAllShortestPaths(graph.getAllLocations());
     }
 
-    // GETTER
     public HashMap<Location,HashMap<Location,Double>> getDistanceMap(){
         return this.mapAllDistances;
     }
@@ -23,9 +22,7 @@ public class Dijkstra {
         for (Location eachLocation : allLocations.keySet()){
             this.mapAllDistances.put(eachLocation, calculateShortestPathFromSource(eachLocation));
         }
-
-
-//        //printing
+        //NOTE: Save this for error checking
 //        System.out.println("PRINTING DISTANCE MAP!");
 //
 //        for (Map.Entry<Location,HashMap<Location,Double>> entry : mapAllDistances.entrySet()) {
@@ -34,7 +31,6 @@ public class Dijkstra {
 //                System.out.println("    " + second.getKey().getName() + " of distance =  " + second.getValue());
 //            }
 //        }
-
     }
 
     private HashMap<Location, Double> calculateShortestPathFromSource(Location source) {
@@ -108,5 +104,4 @@ public class Dijkstra {
         }
         return minimum;
     }
-
 }

@@ -23,5 +23,4 @@ public class Road {
     public double getWeight() {
         return this.weight;
     }
-
 }

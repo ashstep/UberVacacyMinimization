@@ -5,13 +5,10 @@ import java.util.*;
  */
 public class Location {
     private int id;
-    //ubers at this location
-    private List<Uber> myUbers = new ArrayList<>();  //TODO need to consistently update this as the uber moves
-    private List<Passenger> myPeople = new ArrayList<>();  //set onces (inital location)
+    private List<Uber> myUbers = new ArrayList<>();
     private double numPassengers;
     private String stringName;
     private static int count = 0;
-
 
     Location(String nameFinder){
         this.stringName = nameFinder;
@@ -28,7 +25,5 @@ public class Location {
         return this.numPassengers;
     }
     public void setNumPeople(double pppl){ this.numPassengers = pppl;}
-
     public String getName(){return this.stringName;}
-
 }
