@@ -41,7 +41,10 @@ public class Main {
         List<Passenger> passengerList = reqGenerator.getRequestPassengers();
 
         //input: number of ubers, creation method, movement method
-        UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "RANDOM_MOVEMENT");
+        //UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "RANDOM_MOVEMENT");
+        UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "SEARCH_VICINITY");
+
+
         List<Uber> allUberList = uberGenerator.getAllUbersList();
         HashMap<Uber, Boolean> allUbers = uberGenerator.getAllUbers();
 
@@ -54,7 +57,7 @@ public class Main {
 
         //when completed traversal / iteration
         //TODO UNCOMMENT THIS
-        //uberHandler.deactivateUbers(); // printing final values
+        uberHandler.deactivateUbers(); // printing final values
         System.out.println("Ubers deactivated...");
 
 

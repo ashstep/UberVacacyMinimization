@@ -9,6 +9,7 @@ public class Passenger {
     private static int count = 0;
     private Location currentLocation = null;
     private Location targetLocation = null;
+    private Location started;
     private String status;
     private RideRequest myRequest;
 
@@ -19,6 +20,7 @@ public class Passenger {
     private final String noStatus = "NONE";
 
     Passenger(Location l, Location o){
+        this.started = l;
         this.currentLocation = l;
         this.targetLocation = o;
         this.status = noStatus;
@@ -42,6 +44,7 @@ public class Passenger {
     }
 
     //status getter and setters to find state of passenger
+    public Location getStartLocation(){return this.started;}
     public String getStatus(){
         return this.status;
     }

@@ -18,7 +18,7 @@ public class UberGenerator {
     private final String in_place_movement = "IN_PLACE_MOVEMENT";
     private final String random_movement = "RANDOM_MOVEMENT";
     private final String high_concentration_movement = "HIGH_CONCENTRATION_MOVEMENT";
-    private final String search_vicinity_movement= "SEARCH_VICINITY_MOVEMENT";
+    private final String search_vicinity_movement= "SEARCH_VICINITY";
 
     private int graph_size;
     private Graph graph;

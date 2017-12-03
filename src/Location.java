@@ -8,6 +8,7 @@ public class Location {
     //ubers at this location
     private List<Uber> myUbers = new ArrayList<>();  //TODO need to consistently update this as the uber moves
     private List<Passenger> myPeople = new ArrayList<>();  //set onces (inital location)
+    private double numPassengers;
     private String stringName;
     private static int count = 0;
 
@@ -15,6 +16,7 @@ public class Location {
     Location(String nameFinder){
         this.stringName = nameFinder;
         this.id= count++;
+        this.numPassengers = 0;
     }
     public Integer getUniqueIdentifier(){
         return this.id;
@@ -22,9 +24,11 @@ public class Location {
     public List<Uber> getmyUbers(){
         return this.myUbers;
     }
-    public List<Passenger> getmyPeople(){
-        return this.myPeople;
+    public double getNumPeople(){
+        return this.numPassengers;
     }
+    public void setNumPeople(double pppl){ this.numPassengers = pppl;}
+
     public String getName(){return this.stringName;}
 
 }

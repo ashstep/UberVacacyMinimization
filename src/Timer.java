@@ -27,7 +27,7 @@ public class Timer {
 
             this.myHandler.assignUbers(this.time);
 
-            rqgen.getGraphFromGenerator().updateNumberOfPassengers(rqgen.getRequestPassengers());
+            rqgen.getGraphFromGenerator().updateNumberOfPassengers(rqgen.getRequests());
             //rqgen.getGraphFromGenerator().
 
             this.time++;

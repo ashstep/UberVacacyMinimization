@@ -37,13 +37,13 @@ public class Uber {
 
     private String movementPattern;
     private final String inPlace = "IN_PLACE";
-    private final String random_movement_vacant = "RANDOM_VACANT_MOVEMENT";
+    private final String random_movement_vacant = "RANDOM_MOVEMENT";
     private final String high_concentration_movement = "HIGH_CONCENTRATION_MOVEMENT";
     private final String search_vicinity_movement= "SEARCH_VICINITY";
     private boolean patternSet;
     private Graph g;
     private TreeMap<Double, RideRequest> mapOfNearestReq;
-
+    private boolean vacancyDestinationset;
 
     Uber(Graph g, Location start, String movementPattern) {
         this.p = null;
@@ -66,7 +66,7 @@ public class Uber {
         this.allLocations = g.getAllLocations();
         this.allLocationsList = g.getAllLocationsAsList();
         this.distanceMap = g.getDistanceMap();
-        this.mapOfNearestReq = new TreeMap<Double, RideRequest>();
+        this.vacancyDestinationset = false;
 
 
     }
@@ -134,7 +134,8 @@ public class Uber {
                 this.current = destination_pickup;
                 this.destination_pickup = null;
                 this.p.setInUber();
-            } else if (this.enRouteDropoff) {                     //ended the trip
+            }
+            if (this.enRouteDropoff) {                     //ended the trip
                 this.enRouteDropoff = false;
                 this.enRoutePickup = false;
                 this.currDistToTravel = 0;
@@ -146,10 +147,12 @@ public class Uber {
                 this.p.setCompletedRide();
                 this.p = null;                                    //no passenger now
                 this.patternSet = false;
-            } else {
+            }
+            if (this.vacancyDestinationset) {
                 //if reached destination and its vacant  -> reset its destination based on methodology
                  this.currDistToTravel = 0;
                  this.patternSet = false;
+                 this.vacancyDestinationset = false;
                  this.current = destination_pickup;
                  this.destination_pickup=null;
             }
@@ -170,6 +173,7 @@ public class Uber {
 //        System.out.println( "     dest pickup is now -  " +  this.destination_pickup.getName());
 //        System.out.println( "     curr is =   " +  this.current.getName());
         this.currDistToTravel = this.distanceMap.get(this.current).get(this.destination_pickup);
+        this.vacancyDestinationset = true;
 //        System.out.println( "     set this.currDistToTravel " + this.currDistToTravel );
      }
 
@@ -183,6 +187,7 @@ public class Uber {
 
         this.destination_pickup = g.getPopularLocations().get(i);
         this.currDistToTravel = this.distanceMap.get(current).get(destination_pickup);
+        this.vacancyDestinationset = true;
     }
 
 

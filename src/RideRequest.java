@@ -6,12 +6,14 @@ public class RideRequest {
     private boolean assigned;
     private int activationTime;
     private boolean active;
+    private boolean include;  //include this in map calculations?
 
     RideRequest(Passenger p, int activationTime) {
         this.requestor = p;
         this.assigned = false;
         this.activationTime = activationTime;
         this.active = false;
+        this.include = false;
     }
     public void setAssigned(){
         this.assigned = true;
@@ -19,6 +21,13 @@ public class RideRequest {
     public void setActive(){
         this.active = true;
     }
+    public boolean getInclude(){
+        return this.include;
+    }
+    public void setInclude(boolean a){
+         this.include = a;
+    }
+
     public boolean isAssigned(){
         return this.assigned;
     }
@@ -30,6 +39,7 @@ public class RideRequest {
         return this.requestor.completedRide();
     }
     public boolean isActiveRequest(int currentTime){
+
         if (this.activationTime<=currentTime) {
             requestor.setRequestedUber();
             this.setActive();

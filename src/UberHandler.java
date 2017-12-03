@@ -31,30 +31,28 @@ public class UberHandler {
         }
     }
 
-
+    //being called for each ride request
     private void assignmentBasedOnMethod() {
 
-
-
         //randomly pick an uber
-        if (this.uberAllocation.equals("RANDOM_VACANT_MOVEMENT")) {
+        if (this.uberAllocation.equals("RANDOM_MOVEMENT")) {
             for (RideRequest rideReq : this.allRideReq) {
-                if (rideReq.getActive() && !rideReq.isAssigned()) { //if the request is active and no uber assigned
+                if (!rideReq.isAssigned()  &&  rideReq.getActive()) { //if the request is active and no uber assigned
                     Uber u = getRandomValidUber();
+                    rideReq.setInclude(false);
                     u.assignedClient(rideReq.getPassenger());
                     rideReq.setAssigned();
                 }
-
             }
-
-
         }
         //UBER has to search for this client -> client remains unassigned for all ride requsets not assigned -> look at closest
 
         if (this.uberAllocation.equals("SEARCH_VICINITY")) {
+
+            //creating the maps!!!
             for (Uber eachUber : this.allUbersList) {
                 Location l = eachUber.getCurrLocation();
-                TreeMap<Double, RideRequest> saved =  eachUber.getMapOfNearestReq();
+                TreeMap<Double, RideRequest> saved =  new TreeMap<Double, RideRequest>();
                 //extract this at the end
                 //calc ride req distances from suber
                 for (RideRequest rideReq : this.allRideReq) {
@@ -71,9 +69,14 @@ public class UberHandler {
             //time role plays factor
             for (Uber eachUber : this.allUbersList) {
                 if  (eachUber.isVacant()) {
-                    RideRequest rideReq = eachUber.getMapOfNearestReq().firstEntry().getValue();
-                    eachUber.assignedClient(rideReq.getPassenger());
-                    rideReq.setAssigned();
+                    if (eachUber.getMapOfNearestReq().size()!=0){
+                        //TODO going off nearest request
+                        RideRequest rideReq = eachUber.getMapOfNearestReq().firstEntry().getValue();
+                        eachUber.assignedClient(rideReq.getPassenger());
+                        rideReq.setAssigned();
+                        rideReq.setInclude(false);
+
+                    }
                 }
             }
         }
@@ -85,24 +88,14 @@ public class UberHandler {
         //printRideReqStatus();
         //printUberStatus();
         for (RideRequest rideReq : this.allRideReq) {
-            System.out.print("rideReq activation time: " + rideReq.getActivationTime());
-            System.out.println("  / current  time: " + timerTime);
+            //System.out.print("rideReq activation time: " + rideReq.getActivationTime());
+            //System.out.println("  / current  time: " + timerTime);
             if(  !rideReq.isAssigned()  &&  rideReq.isActiveRequest(timerTime)  ){ //if it hasnt been assigned and its active now
-                if (atLeastOneUberAvailable()){
-                    System.out.println("status : " + rideReq.getActive());
-
-                    rideReq.setActive();
-                    //assignmentBasedOnMethod(rideReq);
-                }
+              rideReq.setActive();
+              rideReq.setInclude(true);
             }
         }
         assignmentBasedOnMethod();
-
-
-        /*
-        *ideReq.setAssigned();
-        *
-        * */
         //printRideReqStatus();
         //printUberStatus();
     }

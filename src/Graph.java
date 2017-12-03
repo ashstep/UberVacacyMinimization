@@ -8,9 +8,8 @@ public class Graph {
     public List<Road> edgeSetList;
     public List<Location> locationSetList;
     private HashMap<String, Location> locationNameMapping = new HashMap<>();
-    private List<Location> topLocations;
     private HashMap<Location,HashMap<Location,Double>> distanceMap = new HashMap<>();
-
+    private List<Location> sortedLocationsByPassengerCount;
 
     //locations will not change -> global variable is okay
     Location Harborwalk;
@@ -303,7 +302,6 @@ public class Graph {
 
 //printing the locations we have
     private void printl(String[] namesOrdering){
-        System.out.println("printing the locations we have");
         for (String s : namesOrdering) {
             System.out.print(s);
         }
@@ -347,25 +345,21 @@ public class Graph {
     }
 
     //counts the passengers by their locaiton so that locationSet has updated counts of passengers
-    public void updateNumberOfPassengers(List<Passenger> pass){
-        int c=0;
-        for (Passenger p  : pass){
-            if (p.requestedUber()){
-                c++;
-                locationSet.put(p.getCurrentLocation(),locationSet.get(p.getCurrentLocation())+1);
-            }
-        }
-        System.out.println("count for passengers generated: " + c);
-        System.out.println("printing the number of passengers per location ::::");
-        for (Map.Entry<Location,Double> each : locationSet.entrySet()) {
-            System.out.println(each.getKey().getName() + " = " + each.getValue());
+    public void updateNumberOfPassengers(List<RideRequest> req){
+        locationSet.replaceAll((k, v) -> 0.0);
+        for (RideRequest r  : req){
+            if (r.getInclude()){ //just active but unassigned r.getActive() && !r.isAssigned() && !r.isComplete()
+                locationSet.put(r.getPassenger().getStartLocation(),locationSet.get(r.getPassenger().getStartLocation())+1);
+           }
         }
 
+//        for (Map.Entry<Location,Double> each : locationSet.entrySet()) {
+//            System.out.println("    "  + each.getKey().getName() + " = " + each.getValue());
+//        }
         updatePopularLocations();
-
-
-
     }
+
+
 
     public HashMap<Location,HashMap<Location,Double>> getDistanceMap(){
         return this.distanceMap;
@@ -387,15 +381,28 @@ public class Graph {
         }
         return sortedHashMap;
     }
-    public List<Location> getPopularLocations(){return this.topLocations;}
+    public List<Location> getPopularLocations(){return this.sortedLocationsByPassengerCount;}
 
-    public void updatePopularLocations(){
-        Map<Location,Double > sortedMap = sortByValues(this.locationSet);
-        //System.out.println("locatin set size: " + this.locationSet.size());
-        topLocations = new ArrayList<>();
-        for (Location e : sortedMap.keySet()){
-            //System.out.println("sorted location #"+ e.getName() + " with " + e.getmyPeople().size() + " ppl ");
-            topLocations.add(e);
+    private void updatePopularLocations(){
+        List<Double> doubles = new ArrayList<>(this.locationSet.values());
+        Collections.sort(doubles,Collections.reverseOrder());
+
+        List<Double> final_numberMap = new ArrayList<Double>();
+        List<Location> final_locationMap = new ArrayList<Location>();
+
+        for (double each : doubles) {
+            for (Map.Entry<Location, Double> ent : this.locationSet.entrySet()) {
+                if (each==ent.getValue()) {
+                    final_numberMap.add(each);
+                    final_locationMap.add(ent.getKey());
+                }
+            }
+        }
+        this.sortedLocationsByPassengerCount = final_locationMap;
+
+        //setting the number of people at each location so that each location has number of ppl
+        for (int i = 0; i< this.sortedLocationsByPassengerCount.size(); i++){
+            this.sortedLocationsByPassengerCount.get(i).setNumPeople(final_numberMap.get(i));
         }
     }
 
