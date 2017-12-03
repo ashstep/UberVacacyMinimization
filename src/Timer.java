@@ -1,3 +1,4 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import java.util.*;
 /**
  * Created by Ashka on 11/30/17.
@@ -24,7 +25,6 @@ public class Timer {
         //TODO: Check if the request is active by using : isActiveRequest
         while(traversalIncomplete(rqgen)){
             //printUberStatus();
-
             this.myHandler.assignUbers(this.time);
 
             rqgen.getGraphFromGenerator().updateNumberOfPassengers(rqgen.getRequests());
@@ -32,7 +32,7 @@ public class Timer {
 
             this.time++;
 
-            //System.out.println("Clock at: " + this.time);
+            // System.out.println("Clock at: " + this.time);
             //printRideReqStatus(rqgen.getRequests());
             this.myHandler.updateAllUbers(); //calls "update distance"
 

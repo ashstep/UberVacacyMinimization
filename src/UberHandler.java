@@ -33,9 +33,9 @@ public class UberHandler {
 
     //being called for each ride request
     private void assignmentBasedOnMethod() {
-
         //randomly pick an uber
         if (this.uberAllocation.equals("RANDOM_MOVEMENT")) {
+            //System.out.println("RANDOM_MOVEMENT ASSIGNMETN");
             for (RideRequest rideReq : this.allRideReq) {
                 if (!rideReq.isAssigned()  &&  rideReq.getActive()) { //if the request is active and no uber assigned
                     Uber u = getRandomValidUber();
@@ -48,7 +48,6 @@ public class UberHandler {
         //UBER has to search for this client -> client remains unassigned for all ride requsets not assigned -> look at closest
 
         if (this.uberAllocation.equals("SEARCH_VICINITY")) {
-
             //creating the maps!!!
             for (Uber eachUber : this.allUbersList) {
                 Location l = eachUber.getCurrLocation();

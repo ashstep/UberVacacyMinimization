@@ -30,7 +30,7 @@ public class Main {
         CSVReader reader = new CSVReader("UBER", "NONE");
 
         //comment out data u dont want to use
-        CSVReader location = new CSVReader("LOCATION", "EARLY_MORNING");
+        CSVReader location = new CSVReader("LOCATION", "EVENING");
         // CHOOSE BETWEEN: "EARLY MORNING"; "DAILY_AVERAGE"; "AM_PEAK"; "PM_PEAK"; "MIDDAY"; "EVENING"; "EARLY_MORNING";
 
         Graph g = new Graph(location.get_times(), location.getlocationNames());
@@ -41,8 +41,8 @@ public class Main {
         List<Passenger> passengerList = reqGenerator.getRequestPassengers();
 
         //input: number of ubers, creation method, movement method
-        //UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "RANDOM_MOVEMENT");
-        UberGenerator uberGenerator = new UberGenerator(g, 10, "RANDOM", "SEARCH_VICINITY");
+        UberGenerator uberGenerator = new UberGenerator(g, 200, "RANDOM", "RANDOM_MOVEMENT");
+        //UberGenerator uberGenerator = new UberGenerator(g, 400000, "RANDOM", "SEARCH_VICINITY");
 
 
         List<Uber> allUberList = uberGenerator.getAllUbersList();

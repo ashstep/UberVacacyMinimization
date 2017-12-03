@@ -148,11 +148,11 @@ public class CSVReader {
             br = new BufferedReader(new FileReader(csvFile));
             while ((line = br.readLine()) != null) {
                 //TODO remove this!!!
-//                if (linecount>500) {
-//                    break;
-//                } else {
-//                    linecount++;
-//                }
+                if (linecount>500) {
+                    break;
+                } else {
+                    linecount++;
+                }
 
 
                 String[] uber = line.split(cvsSplitBy);

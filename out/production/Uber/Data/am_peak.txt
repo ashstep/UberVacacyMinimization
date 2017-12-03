@@ -1,0 +1,1012 @@
+Inputting Uber Files...
+Inputting Location Data...
+Simulation for : AM_PEAK  ||  Number of Locations: 10  ||  Number of Roads: 100  ||  Number of Passengers: 501  ||  Number of Requests: 501
+All Requests have been initialized, exiting Request Generator...
+All 200 Ubers initialized using intialization method: RANDOM, and vacant-traversal-behavior: RANDOM_MOVEMENT. Exiting Uber Generator...
+Starting Timer...
+Exiting Timer...
+Time: 838
+PRINTING VACANCY DATA ===================
+UBER #176
+    - 1 Vacancy(ies) with Time Duration: [833 ]
+    - 1 Trips with Time Durations: [5 ] -- Total Trip Time: 5
+    - Distances Travelled: [4.33333 ] -- Total: 4
+
+UBER #4
+    - 1 Vacancy(ies) with Time Duration: [820 ]
+    - 3 Trips with Time Durations: [9 11 18 ] -- Total Trip Time: 38
+    - Distances Travelled: [8.88334 1.98333 6.08333 ] -- Total: 15
+
+UBER #105
+    - 1 Vacancy(ies) with Time Duration: [814 ]
+    - 4 Trips with Time Durations: [9 13 17 24 ] -- Total Trip Time: 63
+    - Distances Travelled: [8.8 3.45 3.6 6.28334 ] -- Total: 20
+
+UBER #90
+    - 1 Vacancy(ies) with Time Duration: [836 ]
+    - 1 Trips with Time Durations: [2 ] -- Total Trip Time: 2
+    - Distances Travelled: [1.6 ] -- Total: 1
+
+UBER #150
+    - 1 Vacancy(ies) with Time Duration: [822 ]
+    - 4 Trips with Time Durations: [3 6 11 16 ] -- Total Trip Time: 36
+    - Distances Travelled: [2.73333 2.3 4.71667 4.03333 ] -- Total: 12
+
+UBER #186
+    - 1 Vacancy(ies) with Time Duration: [836 ]
+    - 1 Trips with Time Durations: [2 ] -- Total Trip Time: 2
+    - Distances Travelled: [1.38333 ] -- Total: 1
+
+UBER #16
+    - 1 Vacancy(ies) with Time Duration: [815 ]
+    - 4 Trips with Time Durations: [7 15 22 23 ] -- Total Trip Time: 67
+    - Distances Travelled: [6.08333 7.3 6.53333 0.0 ] -- Total: 19
+
+UBER #198
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [1 10 ] -- Total Trip Time: 11
+    - Distances Travelled: [0.0 8.8 ] -- Total: 8
+
+UBER #126
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 3 Trips with Time Durations: [6 11 12 ] -- Total Trip Time: 29
+    - Distances Travelled: [5.3 4.11667 0.0 ] -- Total: 9
+
+UBER #3
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 3 Trips with Time Durations: [3 8 11 ] -- Total Trip Time: 22
+    - Distances Travelled: [2.06667 4.03333 2.7 ] -- Total: 8
+
+UBER #93
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 2 Trips with Time Durations: [3 7 ] -- Total Trip Time: 10
+    - Distances Travelled: [2.93333 3.6 ] -- Total: 5
+
+UBER #54
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #184
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 3 Trips with Time Durations: [1 9 14 ] -- Total Trip Time: 24
+    - Distances Travelled: [0.0 7.6 4.03333 ] -- Total: 11
+
+UBER #188
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 5 Trips with Time Durations: [2 9 10 16 21 ] -- Total Trip Time: 58
+    - Distances Travelled: [1.38333 6.1 0.0 5.55 4.76667 ] -- Total: 16
+
+UBER #43
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 3 Trips with Time Durations: [6 7 10 ] -- Total Trip Time: 23
+    - Distances Travelled: [5.11667 0.0 2.73333 ] -- Total: 7
+
+UBER #107
+    - 1 Vacancy(ies) with Time Duration: [836 ]
+    - 1 Trips with Time Durations: [2 ] -- Total Trip Time: 2
+    - Distances Travelled: [1.6 ] -- Total: 1
+
+UBER #80
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [1 10 ] -- Total Trip Time: 11
+    - Distances Travelled: [0.0 8.33333 ] -- Total: 8
+
+UBER #133
+    - 1 Vacancy(ies) with Time Duration: [823 ]
+    - 3 Trips with Time Durations: [2 10 15 ] -- Total Trip Time: 27
+    - Distances Travelled: [1.38333 7.3833400000000005 4.26667 ] -- Total: 12
+
+UBER #2
+    - 1 Vacancy(ies) with Time Duration: [815 ]
+    - 4 Trips with Time Durations: [4 9 16 23 ] -- Total Trip Time: 52
+    - Distances Travelled: [3.6 4.75 6.28334 6.81667 ] -- Total: 19
+
+UBER #103
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 2 Trips with Time Durations: [4 7 ] -- Total Trip Time: 11
+    - Distances Travelled: [3.63333 2.26667 ] -- Total: 5
+
+UBER #40
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.58333 ] -- Total: 2
+
+UBER #170
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 2 Trips with Time Durations: [5 9 ] -- Total Trip Time: 14
+    - Distances Travelled: [4.26667 3.66667 ] -- Total: 7
+
+UBER #139
+    - 1 Vacancy(ies) with Time Duration: [837 ]
+    - 1 Trips with Time Durations: [1 ] -- Total Trip Time: 1
+    - Distances Travelled: [0.0 ] -- Total: 0
+
+UBER #123
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 2 Trips with Time Durations: [9 12 ] -- Total Trip Time: 21
+    - Distances Travelled: [8.15 2.95 ] -- Total: 10
+
+UBER #14
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 2 Trips with Time Durations: [9 14 ] -- Total Trip Time: 23
+    - Distances Travelled: [8.88334 4.26667 ] -- Total: 12
+
+UBER #59
+    - 1 Vacancy(ies) with Time Duration: [816 ]
+    - 6 Trips with Time Durations: [4 8 12 14 21 22 ] -- Total Trip Time: 81
+    - Distances Travelled: [3.6 3.56667 3.63333 1.46667 6.08333 0.0 ] -- Total: 16
+
+UBER #159
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 3 Trips with Time Durations: [3 6 7 ] -- Total Trip Time: 16
+    - Distances Travelled: [2.23333 2.93333 0.0 ] -- Total: 4
+
+UBER #183
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #20
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 3 Trips with Time Durations: [5 11 14 ] -- Total Trip Time: 30
+    - Distances Travelled: [4.8 5.11667 2.65 ] -- Total: 11
+
+UBER #192
+    - 1 Vacancy(ies) with Time Duration: [822 ]
+    - 2 Trips with Time Durations: [8 16 ] -- Total Trip Time: 24
+    - Distances Travelled: [7.3833400000000005 7.3 ] -- Total: 14
+
+UBER #64
+    - 1 Vacancy(ies) with Time Duration: [813 ]
+    - 5 Trips with Time Durations: [7 8 15 20 25 ] -- Total Trip Time: 75
+    - Distances Travelled: [6.85 0.0 6.81667 4.75 4.03333 ] -- Total: 20
+
+UBER #55
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 2 Trips with Time Durations: [6 9 ] -- Total Trip Time: 15
+    - Distances Travelled: [5.55 2.65 ] -- Total: 7
+
+UBER #166
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #27
+    - 1 Vacancy(ies) with Time Duration: [811 ]
+    - 5 Trips with Time Durations: [7 10 18 22 27 ] -- Total Trip Time: 84
+    - Distances Travelled: [6.1 2.21667 7.78334 3.63333 4.33333 ] -- Total: 22
+
+UBER #63
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #70
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 3 Trips with Time Durations: [7 14 21 ] -- Total Trip Time: 42
+    - Distances Travelled: [6.81667 6.08334 6.28334 ] -- Total: 18
+
+UBER #197
+    - 1 Vacancy(ies) with Time Duration: [821 ]
+    - 3 Trips with Time Durations: [4 12 17 ] -- Total Trip Time: 33
+    - Distances Travelled: [3.6 7.78334 4.01667 ] -- Total: 14
+
+UBER #167
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 1 Trips with Time Durations: [6 ] -- Total Trip Time: 6
+    - Distances Travelled: [5.58333 ] -- Total: 5
+
+UBER #174
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 2 Trips with Time Durations: [3 11 ] -- Total Trip Time: 14
+    - Distances Travelled: [2.7 7.3833400000000005 ] -- Total: 9
+
+UBER #134
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 2 Trips with Time Durations: [6 12 ] -- Total Trip Time: 18
+    - Distances Travelled: [5.08334 5.08334 ] -- Total: 10
+
+UBER #76
+    - 1 Vacancy(ies) with Time Duration: [818 ]
+    - 5 Trips with Time Durations: [4 9 10 17 20 ] -- Total Trip Time: 60
+    - Distances Travelled: [3.45 4.68333 0.0 6.866670000000001 2.85 ] -- Total: 15
+
+UBER #161
+    - 1 Vacancy(ies) with Time Duration: [830 ]
+    - 2 Trips with Time Durations: [2 8 ] -- Total Trip Time: 10
+    - Distances Travelled: [1.46667 5.566660000000001 ] -- Total: 6
+
+UBER #113
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 3 Trips with Time Durations: [4 5 10 ] -- Total Trip Time: 19
+    - Distances Travelled: [3.11667 0.0 4.03333 ] -- Total: 7
+
+UBER #87
+    - 1 Vacancy(ies) with Time Duration: [830 ]
+    - 1 Trips with Time Durations: [8 ] -- Total Trip Time: 8
+    - Distances Travelled: [7.91667 ] -- Total: 7
+
+UBER #179
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [7 10 ] -- Total Trip Time: 17
+    - Distances Travelled: [6.81667 2.85 ] -- Total: 8
+
+UBER #115
+    - 1 Vacancy(ies) with Time Duration: [837 ]
+    - 1 Trips with Time Durations: [1 ] -- Total Trip Time: 1
+    - Distances Travelled: [0.0 ] -- Total: 0
+
+UBER #35
+    - 1 Vacancy(ies) with Time Duration: [816 ]
+    - 5 Trips with Time Durations: [5 9 14 17 22 ] -- Total Trip Time: 67
+    - Distances Travelled: [4.8 3.66667 4.71667 2.73333 4.71667 ] -- Total: 17
+
+UBER #191
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 2 Trips with Time Durations: [6 11 ] -- Total Trip Time: 17
+    - Distances Travelled: [5.566660000000001 4.03333 ] -- Total: 9
+
+UBER #23
+    - 1 Vacancy(ies) with Time Duration: [820 ]
+    - 5 Trips with Time Durations: [6 13 14 15 18 ] -- Total Trip Time: 66
+    - Distances Travelled: [5.11667 6.81667 0.0 0.0 2.7 ] -- Total: 13
+
+UBER #26
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 2 Trips with Time Durations: [3 12 ] -- Total Trip Time: 15
+    - Distances Travelled: [2.21667 8.8 ] -- Total: 10
+
+UBER #98
+    - 1 Vacancy(ies) with Time Duration: [834 ]
+    - 1 Trips with Time Durations: [4 ] -- Total Trip Time: 4
+    - Distances Travelled: [3.6 ] -- Total: 3
+
+UBER #195
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 2 Trips with Time Durations: [5 6 ] -- Total Trip Time: 11
+    - Distances Travelled: [4.71667 0.0 ] -- Total: 4
+
+UBER #142
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.95 ] -- Total: 2
+
+UBER #169
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [5 10 ] -- Total Trip Time: 15
+    - Distances Travelled: [4.33333 4.71667 ] -- Total: 8
+
+UBER #137
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.06667 ] -- Total: 2
+
+UBER #77
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 2 Trips with Time Durations: [6 14 ] -- Total Trip Time: 20
+    - Distances Travelled: [5.11667 7.3833400000000005 ] -- Total: 12
+
+UBER #109
+    - 1 Vacancy(ies) with Time Duration: [833 ]
+    - 1 Trips with Time Durations: [5 ] -- Total Trip Time: 5
+    - Distances Travelled: [4.11667 ] -- Total: 4
+
+UBER #81
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 2 Trips with Time Durations: [6 13 ] -- Total Trip Time: 19
+    - Distances Travelled: [5.95 6.58334 ] -- Total: 11
+
+UBER #171
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #121
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 2 Trips with Time Durations: [8 13 ] -- Total Trip Time: 21
+    - Distances Travelled: [7.23333 4.11667 ] -- Total: 11
+
+UBER #157
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 2 Trips with Time Durations: [7 14 ] -- Total Trip Time: 21
+    - Distances Travelled: [6.08333 6.55 ] -- Total: 12
+
+UBER #106
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #111
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 4 Trips with Time Durations: [5 6 9 12 ] -- Total Trip Time: 32
+    - Distances Travelled: [4.85 0.0 2.73333 2.63333 ] -- Total: 8
+
+UBER #165
+    - 1 Vacancy(ies) with Time Duration: [818 ]
+    - 4 Trips with Time Durations: [5 10 17 20 ] -- Total Trip Time: 52
+    - Distances Travelled: [4.75 4.01667 6.08334 2.93333 ] -- Total: 16
+
+UBER #79
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.61667 ] -- Total: 2
+
+UBER #75
+    - 1 Vacancy(ies) with Time Duration: [821 ]
+    - 3 Trips with Time Durations: [7 14 17 ] -- Total Trip Time: 38
+    - Distances Travelled: [6.53333 6.866670000000001 2.5 ] -- Total: 14
+
+UBER #74
+    - 1 Vacancy(ies) with Time Duration: [821 ]
+    - 4 Trips with Time Durations: [8 12 16 17 ] -- Total Trip Time: 53
+    - Distances Travelled: [7.6 3.63333 3.25 0.0 ] -- Total: 13
+
+UBER #162
+    - 1 Vacancy(ies) with Time Duration: [822 ]
+    - 2 Trips with Time Durations: [8 16 ] -- Total Trip Time: 24
+    - Distances Travelled: [7.91667 7.78334 ] -- Total: 14
+
+UBER #91
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 3 Trips with Time Durations: [7 9 12 ] -- Total Trip Time: 28
+    - Distances Travelled: [6.28334 1.98333 2.65 ] -- Total: 9
+
+UBER #94
+    - 1 Vacancy(ies) with Time Duration: [823 ]
+    - 2 Trips with Time Durations: [9 15 ] -- Total Trip Time: 24
+    - Distances Travelled: [8.15 5.566660000000001 ] -- Total: 13
+
+UBER #182
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #1
+    - 1 Vacancy(ies) with Time Duration: [833 ]
+    - 1 Trips with Time Durations: [5 ] -- Total Trip Time: 5
+    - Distances Travelled: [4.71667 ] -- Total: 4
+
+UBER #140
+    - 1 Vacancy(ies) with Time Duration: [812 ]
+    - 6 Trips with Time Durations: [4 9 15 18 22 26 ] -- Total Trip Time: 94
+    - Distances Travelled: [3.45 4.33334 5.55 2.21667 3.26667 3.63333 ] -- Total: 20
+
+UBER #49
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 2 Trips with Time Durations: [8 12 ] -- Total Trip Time: 20
+    - Distances Travelled: [7.78334 3.11667 ] -- Total: 10
+
+UBER #10
+    - 1 Vacancy(ies) with Time Duration: [805 ]
+    - 6 Trips with Time Durations: [2 9 14 21 26 33 ] -- Total Trip Time: 105
+    - Distances Travelled: [1.6 6.58334 4.71667 6.28334 4.16667 6.53333 ] -- Total: 27
+
+UBER #41
+    - 1 Vacancy(ies) with Time Duration: [837 ]
+    - 1 Trips with Time Durations: [1 ] -- Total Trip Time: 1
+    - Distances Travelled: [0.0 ] -- Total: 0
+
+UBER #29
+    - 1 Vacancy(ies) with Time Duration: [830 ]
+    - 2 Trips with Time Durations: [1 8 ] -- Total Trip Time: 9
+    - Distances Travelled: [0.0 6.1 ] -- Total: 6
+
+UBER #7
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [5 10 ] -- Total Trip Time: 15
+    - Distances Travelled: [4.33333 4.75 ] -- Total: 8
+
+UBER #145
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 2 Trips with Time Durations: [3 11 ] -- Total Trip Time: 14
+    - Distances Travelled: [2.5 7.3 ] -- Total: 9
+
+UBER #31
+    - 1 Vacancy(ies) with Time Duration: [820 ]
+    - 5 Trips with Time Durations: [3 7 13 14 18 ] -- Total Trip Time: 55
+    - Distances Travelled: [2.71667 3.56667 5.08334 0.0 3.26667 ] -- Total: 13
+
+UBER #86
+    - 1 Vacancy(ies) with Time Duration: [819 ]
+    - 4 Trips with Time Durations: [3 8 11 19 ] -- Total Trip Time: 41
+    - Distances Travelled: [2.5 4.33333 2.73333 7.6 ] -- Total: 15
+
+UBER #154
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 3 Trips with Time Durations: [7 10 14 ] -- Total Trip Time: 31
+    - Distances Travelled: [6.53333 2.61667 3.45 ] -- Total: 11
+
+UBER #0
+    - 1 Vacancy(ies) with Time Duration: [811 ]
+    - 5 Trips with Time Durations: [3 8 12 21 27 ] -- Total Trip Time: 71
+    - Distances Travelled: [2.7 4.01667 3.63333 8.33333 5.95 ] -- Total: 22
+
+UBER #118
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #72
+    - 1 Vacancy(ies) with Time Duration: [821 ]
+    - 4 Trips with Time Durations: [5 8 10 17 ] -- Total Trip Time: 40
+    - Distances Travelled: [4.03333 2.5 1.38333 6.1 ] -- Total: 13
+
+UBER #117
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [7 10 ] -- Total Trip Time: 17
+    - Distances Travelled: [6.85 2.86667 ] -- Total: 8
+
+UBER #124
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 3 Trips with Time Durations: [8 17 21 ] -- Total Trip Time: 46
+    - Distances Travelled: [7.91667 8.8 3.6 ] -- Total: 18
+
+UBER #33
+    - 1 Vacancy(ies) with Time Duration: [836 ]
+    - 2 Trips with Time Durations: [1 2 ] -- Total Trip Time: 3
+    - Distances Travelled: [0.0 0.0 ] -- Total: 0
+
+UBER #36
+    - 1 Vacancy(ies) with Time Duration: [830 ]
+    - 3 Trips with Time Durations: [3 4 8 ] -- Total Trip Time: 15
+    - Distances Travelled: [2.93333 0.0 3.56667 ] -- Total: 5
+
+UBER #129
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 3 Trips with Time Durations: [4 8 9 ] -- Total Trip Time: 21
+    - Distances Travelled: [3.63333 3.63333 0.0 ] -- Total: 6
+
+UBER #65
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.71667 ] -- Total: 2
+
+UBER #187
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 2 Trips with Time Durations: [8 9 ] -- Total Trip Time: 17
+    - Distances Travelled: [7.78334 0.0 ] -- Total: 7
+
+UBER #62
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 4 Trips with Time Durations: [2 3 11 14 ] -- Total Trip Time: 30
+    - Distances Travelled: [1.68333 0.0 7.3 2.7 ] -- Total: 10
+
+UBER #50
+    - 1 Vacancy(ies) with Time Duration: [821 ]
+    - 5 Trips with Time Durations: [6 8 9 12 17 ] -- Total Trip Time: 52
+    - Distances Travelled: [5.55 1.6 0.0 2.61667 4.68333 ] -- Total: 12
+
+UBER #18
+    - 1 Vacancy(ies) with Time Duration: [803 ]
+    - 5 Trips with Time Durations: [9 15 23 30 35 ] -- Total Trip Time: 112
+    - Distances Travelled: [8.88334 5.3 7.6 6.1 4.8 ] -- Total: 30
+
+UBER #6
+    - 1 Vacancy(ies) with Time Duration: [834 ]
+    - 2 Trips with Time Durations: [1 4 ] -- Total Trip Time: 5
+    - Distances Travelled: [0.0 2.21667 ] -- Total: 2
+
+UBER #25
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 3 Trips with Time Durations: [6 9 14 ] -- Total Trip Time: 29
+    - Distances Travelled: [5.3 2.63333 4.85 ] -- Total: 11
+
+UBER #22
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 2 Trips with Time Durations: [4 11 ] -- Total Trip Time: 15
+    - Distances Travelled: [3.11667 6.81667 ] -- Total: 9
+
+UBER #112
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #44
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #58
+    - 1 Vacancy(ies) with Time Duration: [818 ]
+    - 5 Trips with Time Durations: [3 4 7 13 20 ] -- Total Trip Time: 47
+    - Distances Travelled: [2.65 0.0 2.06667 5.95 6.1 ] -- Total: 15
+
+UBER #30
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 1 Trips with Time Durations: [6 ] -- Total Trip Time: 6
+    - Distances Travelled: [5.11667 ] -- Total: 5
+
+UBER #152
+    - 1 Vacancy(ies) with Time Duration: [823 ]
+    - 3 Trips with Time Durations: [6 9 15 ] -- Total Trip Time: 30
+    - Distances Travelled: [5.566660000000001 2.71667 5.55 ] -- Total: 12
+
+UBER #83
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 2 Trips with Time Durations: [1 6 ] -- Total Trip Time: 7
+    - Distances Travelled: [0.0 4.11667 ] -- Total: 4
+
+UBER #17
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 2 Trips with Time Durations: [3 7 ] -- Total Trip Time: 10
+    - Distances Travelled: [2.65 3.26667 ] -- Total: 5
+
+UBER #34
+    - 1 Vacancy(ies) with Time Duration: [822 ]
+    - 2 Trips with Time Durations: [8 16 ] -- Total Trip Time: 24
+    - Distances Travelled: [7.78334 7.6 ] -- Total: 14
+
+UBER #189
+    - 1 Vacancy(ies) with Time Duration: [820 ]
+    - 4 Trips with Time Durations: [4 12 15 18 ] -- Total Trip Time: 49
+    - Distances Travelled: [3.66667 7.6 2.93333 2.23333 ] -- Total: 14
+
+UBER #13
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 3 Trips with Time Durations: [3 6 11 ] -- Total Trip Time: 20
+    - Distances Travelled: [2.3 2.7 4.68333 ] -- Total: 8
+
+UBER #149
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 3 Trips with Time Durations: [9 14 21 ] -- Total Trip Time: 44
+    - Distances Travelled: [8.15 4.01667 6.28334 ] -- Total: 18
+
+UBER #52
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #114
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 3 Trips with Time Durations: [1 5 6 ] -- Total Trip Time: 12
+    - Distances Travelled: [0.0 3.11667 0.0 ] -- Total: 3
+
+UBER #57
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 2 Trips with Time Durations: [5 13 ] -- Total Trip Time: 18
+    - Distances Travelled: [4.03333 7.23333 ] -- Total: 11
+
+UBER #128
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 4 Trips with Time Durations: [5 13 18 21 ] -- Total Trip Time: 57
+    - Distances Travelled: [4.71667 7.3 4.33333 2.61667 ] -- Total: 17
+
+UBER #172
+    - 1 Vacancy(ies) with Time Duration: [833 ]
+    - 1 Trips with Time Durations: [5 ] -- Total Trip Time: 5
+    - Distances Travelled: [4.85 ] -- Total: 4
+
+UBER #82
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 2 Trips with Time Durations: [6 9 ] -- Total Trip Time: 15
+    - Distances Travelled: [5.566660000000001 2.86667 ] -- Total: 7
+
+UBER #144
+    - 1 Vacancy(ies) with Time Duration: [822 ]
+    - 3 Trips with Time Durations: [8 13 16 ] -- Total Trip Time: 37
+    - Distances Travelled: [7.78334 4.01667 2.46667 ] -- Total: 13
+
+UBER #130
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 3 Trips with Time Durations: [5 6 7 ] -- Total Trip Time: 18
+    - Distances Travelled: [4.11667 0.0 0.0 ] -- Total: 4
+
+UBER #147
+    - 1 Vacancy(ies) with Time Duration: [837 ]
+    - 1 Trips with Time Durations: [1 ] -- Total Trip Time: 1
+    - Distances Travelled: [0.0 ] -- Total: 0
+
+UBER #96
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 4 Trips with Time Durations: [3 6 12 14 ] -- Total Trip Time: 35
+    - Distances Travelled: [2.5 2.3 5.95 1.6 ] -- Total: 10
+
+UBER #84
+    - 1 Vacancy(ies) with Time Duration: [830 ]
+    - 3 Trips with Time Durations: [4 5 8 ] -- Total Trip Time: 17
+    - Distances Travelled: [3.56667 0.0 2.21667 ] -- Total: 5
+
+UBER #102
+    - 1 Vacancy(ies) with Time Duration: [803 ]
+    - 5 Trips with Time Durations: [3 9 17 26 35 ] -- Total Trip Time: 90
+    - Distances Travelled: [2.7 5.55 7.91667 8.8 8.15 ] -- Total: 30
+
+UBER #177
+    - 1 Vacancy(ies) with Time Duration: [808 ]
+    - 4 Trips with Time Durations: [9 17 22 30 ] -- Total Trip Time: 78
+    - Distances Travelled: [8.8 7.91667 4.71667 7.91667 ] -- Total: 26
+
+UBER #136
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 2 Trips with Time Durations: [3 7 ] -- Total Trip Time: 10
+    - Distances Travelled: [2.86667 3.6 ] -- Total: 5
+
+UBER #199
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 4 Trips with Time Durations: [7 12 15 21 ] -- Total Trip Time: 55
+    - Distances Travelled: [6.1 4.26667 2.63333 5.11667 ] -- Total: 17
+
+UBER #141
+    - 1 Vacancy(ies) with Time Duration: [834 ]
+    - 1 Trips with Time Durations: [4 ] -- Total Trip Time: 4
+    - Distances Travelled: [3.56667 ] -- Total: 3
+
+UBER #37
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 2 Trips with Time Durations: [3 6 ] -- Total Trip Time: 9
+    - Distances Travelled: [2.7 2.71667 ] -- Total: 4
+
+UBER #164
+    - 1 Vacancy(ies) with Time Duration: [819 ]
+    - 5 Trips with Time Durations: [6 9 11 18 19 ] -- Total Trip Time: 63
+    - Distances Travelled: [5.3 2.21667 1.46667 6.1 0.0 ] -- Total: 14
+
+UBER #163
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 2 Trips with Time Durations: [5 13 ] -- Total Trip Time: 18
+    - Distances Travelled: [4.85 7.23333 ] -- Total: 11
+
+UBER #61
+    - 1 Vacancy(ies) with Time Duration: [814 ]
+    - 4 Trips with Time Durations: [3 10 17 24 ] -- Total Trip Time: 54
+    - Distances Travelled: [2.58333 6.85 6.58334 6.81667 ] -- Total: 20
+
+UBER #88
+    - 1 Vacancy(ies) with Time Duration: [837 ]
+    - 1 Trips with Time Durations: [1 ] -- Total Trip Time: 1
+    - Distances Travelled: [0.0 ] -- Total: 0
+
+UBER #116
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 3 Trips with Time Durations: [1 8 13 ] -- Total Trip Time: 22
+    - Distances Travelled: [0.0 6.85 4.75 ] -- Total: 10
+
+UBER #46
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 4 Trips with Time Durations: [4 7 10 13 ] -- Total Trip Time: 34
+    - Distances Travelled: [3.6 2.63333 2.65 2.93333 ] -- Total: 9
+
+UBER #155
+    - 1 Vacancy(ies) with Time Duration: [837 ]
+    - 1 Trips with Time Durations: [1 ] -- Total Trip Time: 1
+    - Distances Travelled: [0.0 ] -- Total: 0
+
+UBER #56
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #42
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 2 Trips with Time Durations: [2 3 ] -- Total Trip Time: 5
+    - Distances Travelled: [1.98333 0.0 ] -- Total: 1
+
+UBER #143
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 4 Trips with Time Durations: [8 14 17 21 ] -- Total Trip Time: 60
+    - Distances Travelled: [7.91667 5.566660000000001 2.95 3.56667 ] -- Total: 17
+
+UBER #153
+    - 1 Vacancy(ies) with Time Duration: [833 ]
+    - 2 Trips with Time Durations: [2 5 ] -- Total Trip Time: 7
+    - Distances Travelled: [1.98333 2.61667 ] -- Total: 3
+
+UBER #78
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 3 Trips with Time Durations: [4 7 12 ] -- Total Trip Time: 23
+    - Distances Travelled: [3.6 2.23333 4.33333 ] -- Total: 9
+
+UBER #92
+    - 1 Vacancy(ies) with Time Duration: [834 ]
+    - 2 Trips with Time Durations: [1 4 ] -- Total Trip Time: 5
+    - Distances Travelled: [0.0 2.93333 ] -- Total: 2
+
+UBER #19
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 2 Trips with Time Durations: [2 9 ] -- Total Trip Time: 11
+    - Distances Travelled: [1.38333 6.1 ] -- Total: 7
+
+UBER #24
+    - 1 Vacancy(ies) with Time Duration: [821 ]
+    - 3 Trips with Time Durations: [1 9 17 ] -- Total Trip Time: 27
+    - Distances Travelled: [0.0 7.6 7.91667 ] -- Total: 14
+
+UBER #148
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.93333 ] -- Total: 2
+
+UBER #15
+    - 1 Vacancy(ies) with Time Duration: [822 ]
+    - 5 Trips with Time Durations: [1 2 7 11 16 ] -- Total Trip Time: 37
+    - Distances Travelled: [0.0 0.0 4.8 3.11667 4.76667 ] -- Total: 11
+
+UBER #71
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 1 Trips with Time Durations: [9 ] -- Total Trip Time: 9
+    - Distances Travelled: [8.88334 ] -- Total: 8
+
+UBER #69
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 1 Trips with Time Durations: [7 ] -- Total Trip Time: 7
+    - Distances Travelled: [6.85 ] -- Total: 6
+
+UBER #60
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 3 Trips with Time Durations: [4 7 10 ] -- Total Trip Time: 21
+    - Distances Travelled: [3.11667 2.93333 2.93333 ] -- Total: 7
+
+UBER #193
+    - 1 Vacancy(ies) with Time Duration: [824 ]
+    - 3 Trips with Time Durations: [1 10 14 ] -- Total Trip Time: 25
+    - Distances Travelled: [0.0 8.8 3.25 ] -- Total: 11
+
+UBER #8
+    - 1 Vacancy(ies) with Time Duration: [823 ]
+    - 3 Trips with Time Durations: [8 14 15 ] -- Total Trip Time: 37
+    - Distances Travelled: [7.91667 5.08334 0.0 ] -- Total: 12
+
+UBER #38
+    - 1 Vacancy(ies) with Time Duration: [818 ]
+    - 5 Trips with Time Durations: [3 7 11 17 20 ] -- Total Trip Time: 58
+    - Distances Travelled: [2.7 3.26667 3.45 5.3 2.58333 ] -- Total: 15
+
+UBER #185
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 3 Trips with Time Durations: [5 12 13 ] -- Total Trip Time: 30
+    - Distances Travelled: [4.75 6.866670000000001 0.0 ] -- Total: 10
+
+UBER #45
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 2 Trips with Time Durations: [5 6 ] -- Total Trip Time: 11
+    - Distances Travelled: [4.33333 0.0 ] -- Total: 4
+
+UBER #151
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 3 Trips with Time Durations: [7 12 13 ] -- Total Trip Time: 32
+    - Distances Travelled: [6.28334 4.33334 0.0 ] -- Total: 10
+
+UBER #178
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 2 Trips with Time Durations: [3 6 ] -- Total Trip Time: 9
+    - Distances Travelled: [2.26667 2.26667 ] -- Total: 4
+
+UBER #110
+    - 1 Vacancy(ies) with Time Duration: [832 ]
+    - 1 Trips with Time Durations: [6 ] -- Total Trip Time: 6
+    - Distances Travelled: [5.55 ] -- Total: 5
+
+UBER #51
+    - 1 Vacancy(ies) with Time Duration: [811 ]
+    - 6 Trips with Time Durations: [4 10 11 18 22 27 ] -- Total Trip Time: 92
+    - Distances Travelled: [3.6 5.11667 0.0 6.85 3.63333 4.8 ] -- Total: 21
+
+UBER #131
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #5
+    - 1 Vacancy(ies) with Time Duration: [823 ]
+    - 4 Trips with Time Durations: [3 11 12 15 ] -- Total Trip Time: 41
+    - Distances Travelled: [2.58333 7.6 0.0 2.21667 ] -- Total: 11
+
+UBER #28
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 2 Trips with Time Durations: [5 7 ] -- Total Trip Time: 12
+    - Distances Travelled: [4.68333 1.46667 ] -- Total: 5
+
+UBER #122
+    - 1 Vacancy(ies) with Time Duration: [816 ]
+    - 4 Trips with Time Durations: [3 12 17 22 ] -- Total Trip Time: 54
+    - Distances Travelled: [2.3 8.15 4.33334 4.11667 ] -- Total: 18
+
+UBER #158
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 2 Trips with Time Durations: [3 9 ] -- Total Trip Time: 12
+    - Distances Travelled: [2.63333 5.55 ] -- Total: 7
+
+UBER #181
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 5 Trips with Time Durations: [1 5 6 8 9 ] -- Total Trip Time: 29
+    - Distances Travelled: [0.0 3.45 0.0 1.46667 0.0 ] -- Total: 4
+
+UBER #12
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.95 ] -- Total: 2
+
+UBER #104
+    - 1 Vacancy(ies) with Time Duration: [819 ]
+    - 5 Trips with Time Durations: [1 5 8 12 19 ] -- Total Trip Time: 45
+    - Distances Travelled: [0.0 3.11667 2.58333 3.45 6.08333 ] -- Total: 14
+
+UBER #9
+    - 1 Vacancy(ies) with Time Duration: [809 ]
+    - 5 Trips with Time Durations: [5 14 20 28 29 ] -- Total Trip Time: 96
+    - Distances Travelled: [4.11667 8.33333 5.566660000000001 7.6 0.0 ] -- Total: 24
+
+UBER #138
+    - 1 Vacancy(ies) with Time Duration: [834 ]
+    - 1 Trips with Time Durations: [4 ] -- Total Trip Time: 4
+    - Distances Travelled: [3.45 ] -- Total: 3
+
+UBER #100
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 1 Trips with Time Durations: [7 ] -- Total Trip Time: 7
+    - Distances Travelled: [6.55 ] -- Total: 6
+
+UBER #160
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 3 Trips with Time Durations: [5 9 13 ] -- Total Trip Time: 27
+    - Distances Travelled: [4.33333 3.63333 3.26667 ] -- Total: 10
+
+UBER #120
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #66
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #47
+    - 1 Vacancy(ies) with Time Duration: [829 ]
+    - 2 Trips with Time Durations: [6 9 ] -- Total Trip Time: 15
+    - Distances Travelled: [5.566660000000001 2.7 ] -- Total: 7
+
+UBER #68
+    - 1 Vacancy(ies) with Time Duration: [811 ]
+    - 4 Trips with Time Durations: [9 16 22 27 ] -- Total Trip Time: 74
+    - Distances Travelled: [8.88334 6.58334 5.11667 4.76667 ] -- Total: 23
+
+UBER #180
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 3 Trips with Time Durations: [4 6 13 ] -- Total Trip Time: 23
+    - Distances Travelled: [3.26667 1.38333 6.53333 ] -- Total: 10
+
+UBER #135
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 1 Trips with Time Durations: [7 ] -- Total Trip Time: 7
+    - Distances Travelled: [6.85 ] -- Total: 6
+
+UBER #73
+    - 1 Vacancy(ies) with Time Duration: [825 ]
+    - 2 Trips with Time Durations: [7 13 ] -- Total Trip Time: 20
+    - Distances Travelled: [6.08334 5.08334 ] -- Total: 11
+
+UBER #53
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 3 Trips with Time Durations: [1 4 10 ] -- Total Trip Time: 15
+    - Distances Travelled: [0.0 2.5 5.566660000000001 ] -- Total: 7
+
+UBER #125
+    - 1 Vacancy(ies) with Time Duration: [821 ]
+    - 4 Trips with Time Durations: [3 8 9 17 ] -- Total Trip Time: 37
+    - Distances Travelled: [2.63333 4.26667 0.0 7.3833400000000005 ] -- Total: 13
+
+UBER #95
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 2 Trips with Time Durations: [3 11 ] -- Total Trip Time: 14
+    - Distances Travelled: [2.65 7.91667 ] -- Total: 9
+
+UBER #173
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [3 10 ] -- Total Trip Time: 13
+    - Distances Travelled: [2.21667 6.08333 ] -- Total: 8
+
+UBER #108
+    - 1 Vacancy(ies) with Time Duration: [835 ]
+    - 1 Trips with Time Durations: [3 ] -- Total Trip Time: 3
+    - Distances Travelled: [2.93333 ] -- Total: 2
+
+UBER #89
+    - 1 Vacancy(ies) with Time Duration: [813 ]
+    - 4 Trips with Time Durations: [6 15 23 25 ] -- Total Trip Time: 69
+    - Distances Travelled: [5.3 8.88334 7.91667 1.68333 ] -- Total: 21
+
+UBER #156
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #190
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [6 10 ] -- Total Trip Time: 16
+    - Distances Travelled: [5.566660000000001 3.66667 ] -- Total: 8
+
+UBER #21
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 3 Trips with Time Durations: [6 9 10 ] -- Total Trip Time: 25
+    - Distances Travelled: [5.95 2.7 0.0 ] -- Total: 7
+
+UBER #32
+    - 1 Vacancy(ies) with Time Duration: [819 ]
+    - 3 Trips with Time Durations: [4 12 19 ] -- Total Trip Time: 35
+    - Distances Travelled: [3.66667 7.78334 6.1 ] -- Total: 16
+
+UBER #168
+    - 1 Vacancy(ies) with Time Duration: [818 ]
+    - 3 Trips with Time Durations: [8 14 20 ] -- Total Trip Time: 42
+    - Distances Travelled: [7.23333 5.58333 5.55 ] -- Total: 17
+
+UBER #67
+    - 1 Vacancy(ies) with Time Duration: [833 ]
+    - 1 Trips with Time Durations: [5 ] -- Total Trip Time: 5
+    - Distances Travelled: [4.33334 ] -- Total: 4
+
+UBER #127
+    - 1 Vacancy(ies) with Time Duration: [815 ]
+    - 4 Trips with Time Durations: [9 14 18 23 ] -- Total Trip Time: 64
+    - Distances Travelled: [8.88334 4.76667 3.25 4.03333 ] -- Total: 19
+
+UBER #194
+    - 1 Vacancy(ies) with Time Duration: [820 ]
+    - 3 Trips with Time Durations: [9 15 18 ] -- Total Trip Time: 42
+    - Distances Travelled: [8.8 5.566660000000001 2.93333 ] -- Total: 15
+
+UBER #85
+    - 1 Vacancy(ies) with Time Duration: [831 ]
+    - 2 Trips with Time Durations: [2 7 ] -- Total Trip Time: 9
+    - Distances Travelled: [1.38333 4.26667 ] -- Total: 5
+
+UBER #97
+    - 1 Vacancy(ies) with Time Duration: [838 ]
+    - 0 Trips with Time Durations: [] -- Total Trip Time: 0
+    - Distances Travelled: [] -- Total: 0
+
+UBER #196
+    - 1 Vacancy(ies) with Time Duration: [836 ]
+    - 1 Trips with Time Durations: [2 ] -- Total Trip Time: 2
+    - Distances Travelled: [1.68333 ] -- Total: 1
+
+UBER #146
+    - 1 Vacancy(ies) with Time Duration: [820 ]
+    - 3 Trips with Time Durations: [8 13 18 ] -- Total Trip Time: 39
+    - Distances Travelled: [7.91667 4.8 4.33334 ] -- Total: 15
+
+UBER #132
+    - 1 Vacancy(ies) with Time Duration: [826 ]
+    - 2 Trips with Time Durations: [8 12 ] -- Total Trip Time: 20
+    - Distances Travelled: [7.78334 3.11667 ] -- Total: 10
+
+UBER #175
+    - 1 Vacancy(ies) with Time Duration: [818 ]
+    - 5 Trips with Time Durations: [1 4 11 15 20 ] -- Total Trip Time: 51
+    - Distances Travelled: [0.0 2.23333 6.1 3.25 4.85 ] -- Total: 15
+
+UBER #39
+    - 1 Vacancy(ies) with Time Duration: [827 ]
+    - 2 Trips with Time Durations: [4 11 ] -- Total Trip Time: 15
+    - Distances Travelled: [3.6 6.866670000000001 ] -- Total: 9
+
+UBER #101
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 2 Trips with Time Durations: [8 10 ] -- Total Trip Time: 18
+    - Distances Travelled: [7.3833400000000005 1.38333 ] -- Total: 8
+
+UBER #99
+    - 1 Vacancy(ies) with Time Duration: [820 ]
+    - 3 Trips with Time Durations: [1 9 18 ] -- Total Trip Time: 28
+    - Distances Travelled: [0.0 7.3 8.15 ] -- Total: 15
+
+UBER #48
+    - 1 Vacancy(ies) with Time Duration: [813 ]
+    - 4 Trips with Time Durations: [7 15 18 25 ] -- Total Trip Time: 65
+    - Distances Travelled: [6.58334 7.23333 2.95 6.28334 ] -- Total: 21
+
+UBER #119
+    - 1 Vacancy(ies) with Time Duration: [828 ]
+    - 3 Trips with Time Durations: [5 9 10 ] -- Total Trip Time: 24
+    - Distances Travelled: [4.01667 3.6 0.0 ] -- Total: 7
+
+UBER #11
+    - 1 Vacancy(ies) with Time Duration: [817 ]
+    - 5 Trips with Time Durations: [8 11 17 18 21 ] -- Total Trip Time: 75
+    - Distances Travelled: [7.6 2.58333 5.08334 0.0 2.95 ] -- Total: 16
+
+Ubers deactivated...
+
+Process finished with exit code 0
