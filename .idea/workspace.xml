@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0a7dec7-fcb4-416b-b2e2-e3136e7ab603" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Data/am_peak.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Data/evening.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Data/midday.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Data/morning.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Data/pm_peak.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/CSVReader.class" afterPath="$PROJECT_DIR$/out/production/Uber/CSVReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Main.class" afterPath="$PROJECT_DIR$/out/production/Uber/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Timer.class" afterPath="$PROJECT_DIR$/out/production/Uber/Timer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Uber.class" afterPath="$PROJECT_DIR$/out/production/Uber/Uber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/UberHandler.class" afterPath="$PROJECT_DIR$/out/production/Uber/UberHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CSVReader.java" afterPath="$PROJECT_DIR$/src/CSVReader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Timer.java" afterPath="$PROJECT_DIR$/src/Timer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uber.java" afterPath="$PROJECT_DIR$/src/Uber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UberHandler.java" afterPath="$PROJECT_DIR$/src/UberHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +21,9 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="63" />
-              <folding>
-                <element signature="e#150#206#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -279,8 +262,8 @@
         <option value="$PROJECT_DIR$/src/Data/am_peak.txt" />
         <option value="$PROJECT_DIR$/src/Data/pm_peak.txt" />
         <option value="$PROJECT_DIR$/src/Data/midday.txt" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Data/evening.txt" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -895,7 +878,6 @@
           <caret line="65" column="2" lean-forward="false" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
-            <element signature="e#150#206#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1311,11 +1293,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="63" />
-          <folding>
-            <element signature="e#150#206#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
