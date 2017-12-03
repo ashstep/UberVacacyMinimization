@@ -75,28 +75,14 @@ public class Uber {
        this.p = pass;
        this.destination_pickup = p.getCurrentLocation();
        this.destination_dropoff = p.getTargetLocation();
-//        System.out.println("           uber currently at  " + this.current.getName());
-//       System.out.println("           p.getCurrentLocation() " + p.getCurrentLocation().getUniqueIdentifier());
-//       System.out.println("           p.getTargetLocation() " + p.getTargetLocation().getUniqueIdentifier());
        this.setArriving();
-//       System.out.println("destination_pickup " + destination_pickup.getName());
-//       System.out.println(this.distanceMap.get(current).get(destination_pickup));
-
        this.currDistToTravel = this.distanceMap.get(current).get(destination_pickup);
-       // System.out.println("curr distance to travel set at - " +this.currDistToTravel);
        this.allDistancesTravelled.add(this.currDistToTravel);
        pass.setWaiting();
     }
 
-    //updates distance AND vacancy times
     public void updateDistance(){
-        //System.out.println("the uber #" + this.getID()+ " updateDistance " );
-        //num indicates which method of traversal the uber will use!!!!!
         if(this.isVacant()) {
-            //System.out.println("the uber #" + this.getID()+ " isVacant " );
-
-            //System.out.println("the uber #" + this.getID()+" is vacant, curr distance is " + this.currDistToTravel);
-            //System.out.println(this.getCurrLocation().getName());
             this.currVacancyTime++;
             setVacancyPattern();        //need to decide movment pattern
             this.currDistToTravel--;
@@ -104,8 +90,6 @@ public class Uber {
         }
 
         if (!this.isVacant()) { //assuming that each increment of currTripTime you travel one unit of distance
-            //System.out.println("the uber #" + this.getID()+ " isNOTVacant " );
-            //System.out.println("the uber"+ this.getID()+" is NOT vacant, curr distance is " + this.currDistToTravel + this.status);
             this.currTripTime++;
             this.currDistToTravel--;
             this.vacancyDestinationset=false;
@@ -117,14 +101,10 @@ public class Uber {
         if (!patternSet) {
             //System.out.println("     vacancy pattern not set");
             if (this.movementPattern.equals(random_movement_vacant)) {
-                //System.out.println(this.getID()  + "   going to random movement function " + this.current.getName());
-
                 randomMovement();
-            } else if (this.movementPattern.equals(high_concentration_movement)) {
+            }
+            if (this.movementPattern.equals(high_concentration_movement)) {
                 highConcentrationMovement();
-            } else {
-                //stationary
-                //TODO add this method in
             }
             patternSet = true;
         }
@@ -156,15 +136,10 @@ public class Uber {
                 this.patternSet = false;
             }
             if (this.vacancyDestinationset) {
-                //if reached destination and its vacant  -> reset its destination based on methodology
                  this.currDistToTravel = 0;
                  this.patternSet = false;
                  this.vacancyDestinationset = false;
-                //System.out.println(this.getID() + " --  - " + this.current.getName());
-
                 this.current = destination_pickup;
-                //System.out.println(this.getID()  + "   --  - " + this.current.getName());
-
                 this.destination_pickup=null;
             }
         }
@@ -175,30 +150,17 @@ public class Uber {
 
     // VACANCY METHOD 2: Random Movement While Waiting/Vacant
     private void randomMovement(){
-//        System.out.println("     rand mvmt for uber " + this.getID() + "  vacancies"+ this.allVacancyTimes.size() );
-
         this.destination_pickup = allLocationsList.get(new Random().nextInt(allLocations.size()));
-//        System.out.print("  pickup set, find dist frmo " +this.current  );
-        //System.out.println(this.getID()  + " aka - " + this.current);
-//        System.out.println(" to  " + this.destination_pickup);
-//        System.out.println( "     dest pickup is now -  " +  this.destination_pickup.getName());
-        //System.out.println( this.getID()  + "     curr is =   " +  this.current.getName());
         this.currDistToTravel = this.distanceMap.get(this.current).get(this.destination_pickup);
         this.vacancyDestinationset = true;
-//        System.out.println( "     set this.currDistToTravel " + this.currDistToTravel );
      }
 
      
     // VACANCY METHOD 3: Ubers Move in direction of highest concentration while
-    //TODO doff numbers of ubers go to differnet top locations
+    //TODO diff numbers of ubers go to differnet top locations
     private void highConcentrationMovement(){
-
-        //int i = UberHandler(g,);
         int i =0;
-
         this.destination_pickup = g.getPopularLocations().get(i);
-        //System.out.println(this.getID()  + "   getting desitnation pickup" + this.destination_pickup.getName());
-
         this.currDistToTravel = this.distanceMap.get(current).get(destination_pickup);
         this.vacancyDestinationset = true;
     }

@@ -1,10 +1,7 @@
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import java.util.*;
 /**
  * Created by Ashka on 11/30/17.
- *
- * incerements and carries out all operations
- *
+ * Increments
  */
 public class Timer {
     private int time;
@@ -17,26 +14,13 @@ public class Timer {
         ticker(rqgen);
     }
 
-
-    //updates the distances of the ubers in progress
-    //updates the status of ride requests
-    //adds new requests in on time
     public void ticker(RequestGenerator rqgen){
-        //TODO: Check if the request is active by using : isActiveRequest
         while(traversalIncomplete(rqgen)){
-            //printUberStatus();
             this.myHandler.assignUbers(this.time);
-
             rqgen.getGraphFromGenerator().updateNumberOfPassengers(rqgen.getRequests());
-            //rqgen.getGraphFromGenerator().
-
             this.time++;
-
             // System.out.println("Clock at: " + this.time);
-            //printRideReqStatus(rqgen.getRequests());
             this.myHandler.updateAllUbers(); //calls "update distance"
-
-
         }
     }
 
