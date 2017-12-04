@@ -22,6 +22,16 @@ public class Graph {
     Location Charles;
     Location CharlesRiver;
     Location StateHouse;
+    Location Tremont;
+    Location Summer;
+    Location Washington;
+    Location Arlington;
+    Location River;
+    Location Newbury;
+    Location Huntington;
+    Location WestCanton;
+    Location Beacon;
+
 
     //TODO fix for the average indicator!!!!
     Graph (double[][] arr, String[] names ) {
@@ -45,8 +55,27 @@ public class Graph {
         Charles = new Location("Charles St. - Beacon Hill");
         CharlesRiver = new Location("Charles River Esplanade");
         StateHouse = new Location("MA State House - Beacon Hill");
+        Tremont = new Location("Tremont St.");
+        Summer = new Location("Summer St.");
+        Washington = new Location("Washington St.");
+        Arlington = new Location("Arlington St.");
+        River = new Location("River St.");
+        Newbury = new Location("Newbury St.");
+        Huntington = new Location("Huntington Ave.");
+        WestCanton = new Location("West Canton St.");
+        Beacon = new Location("Beacon St.");
 
         locationSet = new HashMap<>();
+        locationSet.put(Tremont, 0.0);
+        locationSet.put(Summer, 0.0);
+        locationSet.put(Washington, 0.0);
+        locationSet.put(Arlington, 0.0);
+        locationSet.put(River, 0.0);
+        locationSet.put(Newbury, 0.0);
+        locationSet.put(Huntington, 0.0);
+        locationSet.put(WestCanton, 0.0);
+        locationSet.put(Beacon, 0.0);
+
         locationSet.put(Harborwalk, 0.0);
         locationSet.put(Hanover, 0.0);
         locationSet.put(Commercial, 0.0);

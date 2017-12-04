@@ -15,7 +15,7 @@ public class CSVReader {
     private final String uber = "UBER";
 
     //possible graphs to generate
-    private final String avg = "DAILY_AVERAGE";
+    private final String avg = "DAILY_AVERAGE";  //TODO add for average 
     private final String am = "AM_PEAK";
     private final String pm = "PM_PEAK";
     private final String midday = "MIDDAY";
