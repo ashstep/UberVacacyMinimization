@@ -18,7 +18,6 @@ public class Uber {
     private boolean enRouteDropoff;
     private int id=0;
     private static int count = 0;
-//    private Passenger p;
     private RideRequest rideRequest;
 
     private HashMap<Location, Double> allLocations;
@@ -73,12 +72,13 @@ public class Uber {
 
     }
 
-    public void assignedRequest(RideRequest r ) {
+    public void assignedRequest(RideRequest r, int currTime) {
         this.rideRequest = r;
         this.destination_pickup =r.getPickup();
         this.destination_dropoff = r.getDropoff();
 
         this.setArriving();
+        this.allVacancyTimes.add(currTime-currVacancyTime);
 
         if (this.current==null) {
             //was prev unassigned
@@ -273,9 +273,9 @@ public class Uber {
     public boolean inRide(){
         return this.status.equals(inRide);
     }
-    public void shutDownUber(){
+    public void shutDownUber(int time){
         this.status = noStatus;
-        this.allVacancyTimes.add(this.currVacancyTime);
+        this.allVacancyTimes.add(time-this.currVacancyTime);
     }
     public List<Integer> getTripTimes(){return this.allTripTimes;}
     public double getAvgOccupiedTime(){
@@ -305,28 +305,30 @@ public class Uber {
         return this.movementPattern;
     }
     //printing data
-    public void printNumberofRides(){
-        System.out.println("UBER #" + this.getID());
+    public void printNumberofRides(List<Integer> li){
+        System.out.println("TAXI #" + this.getID());
         System.out.print( "    - "+ this.allVacancyTimes.size()   + " Vacancy(ies) with Time Duration: [");
         for (int all : getVacancyTimes()) {
+            li.add(all);
             System.out.print(all + " ");
+
         }
         System.out.println("]");
-        System.out.print("    - "+ this.allTripTimes.size()  +" Trips with Time Durations: [");
-        int total=0;
-        for (int each: this.allTripTimes) {
-            System.out.print(each + " ");
-            total+= each;
-        }
-        System.out.print("] -- Total Trip Time: "+ total);
-        System.out.println();
-
-        System.out.print("    - Distances Travelled: [");
-        int to=0;
-        for (double e : this.allDistancesTravelled){
-            System.out.print(e + " ");
-            to+= e;
-        }
-        System.out.println("] -- Total: "+ to);
+//        System.out.print("    - "+ this.allTripTimes.size()  +" Trips with Time Durations: [");
+//        int total=0;
+//        for (int each: this.allTripTimes) {
+//            System.out.print(each + " ");
+//            total+= each;
+//        }
+//        System.out.print("] -- Total Trip Time: "+ total);
+//        System.out.println();
+//
+//        System.out.print("    - Distances Travelled: [");
+//        int to=0;
+//        for (double e : this.allDistancesTravelled){
+//            System.out.print(e + " ");
+//            to+= e;
+//        }
+//        System.out.println("] -- Total: "+ to);
     }
 }

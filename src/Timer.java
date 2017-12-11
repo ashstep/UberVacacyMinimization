@@ -79,7 +79,7 @@ public class Timer {
 
     }
 
-    public void getTime(){
-        System.out.println("Time: " + this.time);
+    public int getTime(){
+        System.out.println("Time: " + this.time);return time;
     }
 }

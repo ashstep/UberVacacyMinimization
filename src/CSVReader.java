@@ -38,7 +38,7 @@ public class CSVReader {
             System.out.println("Inputting Taxi Files for: " + timeofday + "...  ");
             readTaxiFile("/Users/Ashka/Documents/Workspace/Uber/src/CSVTaxiData/green_tripdata_2017-01.csv", timeofday);
             readTaxiFile("/Users/Ashka/Documents/Workspace/Uber/src/CSVTaxiData/green_tripdata_2017-02.csv", timeofday);
-            readTaxiFile("/Users/Ashka/Documents/Workspace/Uber/src/CSVTaxiData/green_tripdata_2017-03.csv", timeofday);
+            //readTaxiFile("/Users/Ashka/Documents/Workspace/Uber/src/CSVTaxiData/green_tripdata_2017-03.csv", timeofday);
 
         }
 
@@ -72,13 +72,6 @@ public class CSVReader {
 
             br = new BufferedReader(new FileReader(csvFile));
             while ((line = br.readLine()) != null) {
-
-                //TODO remove this for FINAL runs
-                if (linecount>500) {
-                    break;
-                } else {
-                    linecount++;
-                }
 
                 String[] taxi = line.split(cvsSplitBy);
 
@@ -125,6 +118,7 @@ public class CSVReader {
                 }
 
 
+
                 //error check
                 if (rideDuration<=0) {
                     continue;
@@ -149,6 +143,14 @@ public class CSVReader {
                     //not dispatched, hailed
                     continue;
                 }
+
+//                //TODO remove this for FINAL runs
+//                if (linecount>500) {
+//                    break;
+//                } else {
+//                    linecount++;
+//                }
+
                 RideRequest rideReq_new = new RideRequest(timeRequestMadeMinutes1,timeRequestMadeMinutes2,rideDuration, getExistingLocation(pickupLocationNum), getExistingLocation(dropoffLocationNum));
                 allRideReq.add(rideReq_new);
 

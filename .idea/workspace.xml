@@ -2,48 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0a7dec7-fcb4-416b-b2e2-e3136e7ab603" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/am_peak.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/midday.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/morning.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/pm_peak.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Graph$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Passenger.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/UberData/aug14.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/am_peak.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/evening.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/midday.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/morning.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/pm_peak.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/OriginalTravelTimes/Midday.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/OriginalTravelTimes/PM_Peak.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Passenger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UberData/aug14.csv" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/CSVReader.class" afterPath="$PROJECT_DIR$/out/production/Uber/CSVReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/DataGathering.class" afterPath="$PROJECT_DIR$/out/production/Uber/DataGathering.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Dijkstra.class" afterPath="$PROJECT_DIR$/out/production/Uber/Dijkstra.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Graph.class" afterPath="$PROJECT_DIR$/out/production/Uber/Graph.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Location.class" afterPath="$PROJECT_DIR$/out/production/Uber/Location.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Main.class" afterPath="$PROJECT_DIR$/out/production/Uber/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/RequestGenerator.class" afterPath="$PROJECT_DIR$/out/production/Uber/RequestGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/RideRequest.class" afterPath="$PROJECT_DIR$/out/production/Uber/RideRequest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Road.class" afterPath="$PROJECT_DIR$/out/production/Uber/Road.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Timer.class" afterPath="$PROJECT_DIR$/out/production/Uber/Timer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Uber.class" afterPath="$PROJECT_DIR$/out/production/Uber/Uber.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/UberGenerator.class" afterPath="$PROJECT_DIR$/out/production/Uber/UberGenerator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/UberHandler.class" afterPath="$PROJECT_DIR$/out/production/Uber/UberHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CSVReader.java" afterPath="$PROJECT_DIR$/src/CSVReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataGathering.java" afterPath="$PROJECT_DIR$/src/DataGathering.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dijkstra.java" afterPath="$PROJECT_DIR$/src/Dijkstra.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph.java" afterPath="$PROJECT_DIR$/src/Graph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Location.java" afterPath="$PROJECT_DIR$/src/Location.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RequestGenerator.java" afterPath="$PROJECT_DIR$/src/RequestGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RideRequest.java" afterPath="$PROJECT_DIR$/src/RideRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Road.java" afterPath="$PROJECT_DIR$/src/Road.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Timer.java" afterPath="$PROJECT_DIR$/src/Timer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uber.java" afterPath="$PROJECT_DIR$/src/Uber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UberGenerator.java" afterPath="$PROJECT_DIR$/src/UberGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UberHandler.java" afterPath="$PROJECT_DIR$/src/UberHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,10 +25,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="240">
+              <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
               <folding>
-                <element signature="e#513#536#0" expanded="false" />
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#480#503#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,7 +38,7 @@
       <file leaf-file-name="RideRequest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RideRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-502">
               <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding>
                 <element signature="method#deleteRequest#0;class#RideRequest#0" expanded="false" />
@@ -87,17 +50,15 @@
       <file leaf-file-name="UberHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UberHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="207">
+              <caret line="141" column="40" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="40" />
               <folding>
                 <element signature="method#UberHandler#0;class#UberHandler#0" expanded="false" />
-                <element signature="e#2782#2803#0" expanded="true" />
+                <element signature="e#2836#2857#0" expanded="true" />
                 <element signature="method#getNumAvailableUbers#0;class#UberHandler#0" expanded="false" />
                 <element signature="method#getRandomValidUber#0;class#UberHandler#0" expanded="false" />
                 <element signature="method#getRandomUber#0;class#UberHandler#0" expanded="false" />
                 <element signature="method#highConcentrationLocationDistributor#0;class#UberHandler#0" expanded="false" />
-                <element signature="method#deactivateUbers#0;class#UberHandler#0" expanded="false" />
-                <element signature="method#printFinalUberVacancies#0;class#UberHandler#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -106,12 +67,12 @@
       <file leaf-file-name="CSVReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CSVReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="304" column="5" lean-forward="false" selection-start-line="304" selection-start-column="5" selection-end-line="304" selection-end-column="5" />
+            <state relative-caret-position="196">
+              <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1618#1669#0" expanded="false" />
+                <element signature="e#1620#1671#0" expanded="false" />
                 <element signature="method#getExistingLocation#0;class#CSVReader#0" expanded="false" />
                 <element signature="method#locationExists#0;class#CSVReader#0" expanded="false" />
                 <element signature="method#setDistanceMap#0;class#CSVReader#0" expanded="false" />
@@ -123,8 +84,8 @@
       <file leaf-file-name="Timer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="82" column="61" lean-forward="false" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
               <folding>
                 <element signature="e#157#162#0" expanded="false" />
               </folding>
@@ -135,14 +96,12 @@
       <file leaf-file-name="Uber.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Uber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3376">
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="225">
+              <caret line="311" column="24" lean-forward="false" selection-start-line="311" selection-start-column="24" selection-end-line="311" selection-end-column="24" />
               <folding>
                 <element signature="method#startAtBaseLocation#0;class#Uber#0" expanded="false" />
                 <element signature="method#setArriving#0;class#Uber#0" expanded="false" />
-                <element signature="method#shutDownUber#0;class#Uber#0" expanded="false" />
                 <element signature="method#getAvgOccupiedTime#0;class#Uber#0" expanded="false" />
-                <element signature="method#printNumberofRides#0;class#Uber#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -203,11 +162,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>waitingArrival</find>
-      <find>enRoutePickup</find>
-      <find>9</find>
-      <find>_times</find>
-      <find>traversalBehavior</find>
       <find>patternSet</find>
       <find>moveme</find>
       <find>timeOfDay</find>
@@ -230,9 +184,14 @@
       <find>pass</find>
       <find>mapOfNearestReq</find>
       <find>inRide</find>
-      <find>printUberStatus</find>
       <find>locationSet</find>
       <find>rideRequest</find>
+      <find>printUberStatus</find>
+      <find>vac</find>
+      <find>assignedRequest</find>
+      <find>allVacancyTimes</find>
+      <find>shutDownUber</find>
+      <find>deactivateUbers</find>
     </findStrings>
     <replaceStrings>
       <replace>Road</replace>
@@ -299,16 +258,16 @@
         <option value="$PROJECT_DIR$/src/Road.java" />
         <option value="$PROJECT_DIR$/src/UberGenerator.java" />
         <option value="$PROJECT_DIR$/src/Dijkstra.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/RideRequest.java" />
-        <option value="$PROJECT_DIR$/src/UberHandler.java" />
         <option value="$PROJECT_DIR$/src/Location.java" />
-        <option value="$PROJECT_DIR$/src/CSVReader.java" />
         <option value="$PROJECT_DIR$/src/Graph.java" />
-        <option value="$PROJECT_DIR$/src/Timer.java" />
-        <option value="$PROJECT_DIR$/src/Uber.java" />
         <option value="$PROJECT_DIR$/src/DataGathering.java" />
         <option value="$PROJECT_DIR$/src/RequestGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Timer.java" />
+        <option value="$PROJECT_DIR$/src/Uber.java" />
+        <option value="$PROJECT_DIR$/src/UberHandler.java" />
+        <option value="$PROJECT_DIR$/src/CSVReader.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -417,6 +376,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Timer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RideRequest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -788,7 +765,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -799,7 +775,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19532324" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39752406" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1141,53 +1117,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RideRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="method#deleteRequest#0;class#RideRequest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Location.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UberHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="method#UberHandler#0;class#UberHandler#0" expanded="false" />
-            <element signature="e#2782#2803#0" expanded="true" />
-            <element signature="method#getNumAvailableUbers#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#getRandomValidUber#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#getRandomUber#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#highConcentrationLocationDistributor#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#deactivateUbers#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#printFinalUberVacancies#0;class#UberHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CSVReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="304" column="5" lean-forward="false" selection-start-line="304" selection-start-column="5" selection-end-line="304" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1618#1669#0" expanded="false" />
-            <element signature="method#getExistingLocation#0;class#CSVReader#0" expanded="false" />
-            <element signature="method#locationExists#0;class#CSVReader#0" expanded="false" />
-            <element signature="method#setDistanceMap#0;class#CSVReader#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,30 +1132,6 @@
           <folding>
             <element signature="e#1973#1981#0" expanded="true" />
             <element signature="method#getAllLocations#0;class#Graph#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#157#162#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3376">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="method#startAtBaseLocation#0;class#Uber#0" expanded="false" />
-            <element signature="method#setArriving#0;class#Uber#0" expanded="false" />
-            <element signature="method#shutDownUber#0;class#Uber#0" expanded="false" />
-            <element signature="method#getAvgOccupiedTime#0;class#Uber#0" expanded="false" />
-            <element signature="method#printNumberofRides#0;class#Uber#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1264,12 +1174,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/RideRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-502">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="method#deleteRequest#0;class#RideRequest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="82" column="61" lean-forward="false" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="61" />
+          <folding>
+            <element signature="e#157#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Uber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="311" column="24" lean-forward="false" selection-start-line="311" selection-start-column="24" selection-end-line="311" selection-end-column="24" />
+          <folding>
+            <element signature="method#startAtBaseLocation#0;class#Uber#0" expanded="false" />
+            <element signature="method#setArriving#0;class#Uber#0" expanded="false" />
+            <element signature="method#getAvgOccupiedTime#0;class#Uber#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UberHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="141" column="40" lean-forward="false" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="40" />
+          <folding>
+            <element signature="method#UberHandler#0;class#UberHandler#0" expanded="false" />
+            <element signature="e#2836#2857#0" expanded="true" />
+            <element signature="method#getNumAvailableUbers#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#getRandomValidUber#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#getRandomUber#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#highConcentrationLocationDistributor#0;class#UberHandler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CSVReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1620#1671#0" expanded="false" />
+            <element signature="method#getExistingLocation#0;class#CSVReader#0" expanded="false" />
+            <element signature="method#locationExists#0;class#CSVReader#0" expanded="false" />
+            <element signature="method#setDistanceMap#0;class#CSVReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="240">
+          <caret line="32" column="62" lean-forward="false" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
           <folding>
-            <element signature="e#513#536#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#480#503#0" expanded="false" />
           </folding>
         </state>
       </provider>

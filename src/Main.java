@@ -2,13 +2,13 @@
  * Created by Ashka on 11/15/17.
  * Used just for running
  */
-
+import java.util.*;
 public class Main {
     public Main() {}
 
     public static void main(String args[]) {
-        // NOTE: Choose Between "EARLY MORNING"; "DAILY_AVERAGE"; "AM_PEAK"; "PM_PEAK"; "MIDDAY"; "EVENING"; "EARLY_MORNING";
-        CSVReader reader = new CSVReader("UBER","EVENING");
+        // NOTE: Choose Between LATE_NIGHT MORNING  AFTERNOON EVENING NIGHT
+        CSVReader reader = new CSVReader("UBER","NIGHT");
 
         System.out.println("Initializing Graph...");
         Graph g = new Graph(reader.getAllLocationsList(), reader.getAllLocations(), reader.getDistanceMap());
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Distance mapping generated...");
 
         //NOTE inputs are: number of ubers, creation method, movement method
-        UberGenerator uberGenerator = new UberGenerator(g, 20, "RANDOM", "RANDOM_MOVEMENT");
+        UberGenerator uberGenerator = new UberGenerator(g, 200, "RANDOM", "RANDOM_MOVEMENT");
         System.out.println("Uber generator completed...");
         //Example of another movement method based on search vicinity
         //UberGenerator uberGenerator = new UberGenerator(g, 400, "RANDOM", "SEARCH_VICINITY");
@@ -38,8 +38,13 @@ public class Main {
         UberHandler uberHandler = new UberHandler(g, uberGenerator.getAllUbersList(),uberGenerator.getAllUbers(),reader.getAllRideReq());
         Timer t = new Timer(uberHandler,g,reader.getAllRideReq());
         System.out.println("Exiting Timer...");
-        t.getTime();   //printing final time
-        uberHandler.deactivateUbers(); // printing final values
+        List<Integer> data = uberHandler.deactivateUbers(t.getTime()); // printing final values
+
+        //printing:
+        for (int e:data) {
+            System.out.println(e);
+        }
+
         System.out.println("Ubers deactivated...");
     }
 }

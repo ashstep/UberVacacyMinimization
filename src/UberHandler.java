@@ -45,12 +45,12 @@ public class UberHandler {
                 rideReq.setInclude(true); //including in our final mapping
             }
         }
-        assignmentBasedOnMethod();
+        assignmentBasedOnMethod(timerTime);
     }
 
 
     //being called for each ride request
-    private void assignmentBasedOnMethod() {
+    private void assignmentBasedOnMethod(int timerTime) {
         //METHOD 1: RANDOM UBER PICKING
         if (this.uberAllocation.equals("RANDOM_MOVEMENT")) {
             for (RideRequest rideReq : this.allRideReq) {
@@ -58,7 +58,7 @@ public class UberHandler {
                     rideReq.setInclude(false);
                     //System.out.println("    assigning an uber RANDOM");
                     Uber u = getRandomValidUber();
-                    u.assignedRequest(rideReq);
+                    u.assignedRequest(rideReq,timerTime);
                     rideReq.setAssigned();
 
                 }
@@ -68,11 +68,11 @@ public class UberHandler {
 
         //UBER has to search for this client -> client remains unassigned for all ride requsets not assigned -> look at closest
         if (this.uberAllocation.equals("SEARCH_VICINITY")) {
-            searchVicin();
+            searchVicin(timerTime);
         }
     }
 
-    private void searchVicin() {
+    private void searchVicin(int timerTime) {
         for (Uber eachUber : this.allUbersList) {
             Location l = eachUber.getCurrLocation();
             TreeMap<Double, RideRequest> saved =  new TreeMap<Double, RideRequest>();
@@ -95,7 +95,7 @@ public class UberHandler {
                     //going off nearest request
                     RideRequest rideReq = eachUber.getMapOfNearestReq().firstEntry().getValue();
                     //eachUber.assignedClient(rideReq.getPassenger());
-                    eachUber.assignedRequest(rideReq);
+                    eachUber.assignedRequest(rideReq,timerTime);
                     rideReq.setAssigned();
                     rideReq.setInclude(false);
                 }
@@ -139,17 +139,22 @@ public class UberHandler {
         }
         return numUbersSent_1;
     }
-    public void deactivateUbers(){
+    public List<Integer> deactivateUbers(int t){
         for (Uber each: allUbers.keySet()){
-            each.shutDownUber();
+            each.shutDownUber(t);
         }
-        printFinalUberVacancies();
+
+        //FINAL all vacancies in this time!!!
+        //TODO just to highlight
+        return printFinalUberVacancies();
     }
-    private void printFinalUberVacancies(){
+    private List<Integer> printFinalUberVacancies(){
         System.out.println("PRINTING VACANCY DATA ===================");
+        List<Integer> retthis = new ArrayList<>();
         for(Uber u : allUbers.keySet()){
-            u.printNumberofRides();
+            u.printNumberofRides(retthis);
             System.out.println();
         }
+        return retthis;
     }
 }
