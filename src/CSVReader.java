@@ -143,9 +143,9 @@ public class CSVReader {
                     //not dispatched, hailed
                     continue;
                 }
-
+//
 //                //TODO remove this for FINAL runs
-//                if (linecount>500) {
+//                if (linecount>23) {
 //                    break;
 //                } else {
 //                    linecount++;

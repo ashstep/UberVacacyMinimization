@@ -23,7 +23,7 @@ public class Graph {
         locationSet.replaceAll((k, v) -> 0.0);
         for (RideRequest r  : req){
             if (r.getInclude()){ //just active but unassigned r.getActive() && !r.isAssigned() && !r.isComplete()
-                System.out.println("  including this ride req");
+
                 locationSet.put(r.getPickup(),locationSet.get(r.getDropoff())+1);
             }
         }
@@ -38,8 +38,8 @@ public class Graph {
         List<Double> doubles = new ArrayList<>(this.locationSet.values());
         Collections.sort(doubles,Collections.reverseOrder());
 
-        List<Double> final_numberMap = new ArrayList<Double>();
-        List<Location> final_locationMap = new ArrayList<Location>();
+        List<Double> final_numberMap = new ArrayList<>();
+        List<Location> final_locationMap = new ArrayList<>();
 
         for (double each : doubles) {
             for (Map.Entry<Location, Double> ent : this.locationSet.entrySet()) {

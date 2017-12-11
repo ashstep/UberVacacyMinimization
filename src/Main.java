@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String args[]) {
         // NOTE: Choose Between LATE_NIGHT MORNING  AFTERNOON EVENING NIGHT
-        CSVReader reader = new CSVReader("UBER","NIGHT");
+        CSVReader reader = new CSVReader("UBER","LATE_NIGHT");
 
         System.out.println("Initializing Graph...");
         Graph g = new Graph(reader.getAllLocationsList(), reader.getAllLocations(), reader.getDistanceMap());
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Distance mapping generated...");
 
         //NOTE inputs are: number of ubers, creation method, movement method
-        UberGenerator uberGenerator = new UberGenerator(g, 200, "RANDOM", "RANDOM_MOVEMENT");
+        UberGenerator uberGenerator = new UberGenerator(g, 200, "RANDOM", "HIGH_CONCENTRATION_MOVEMENT");
         System.out.println("Uber generator completed...");
         //Example of another movement method based on search vicinity
         //UberGenerator uberGenerator = new UberGenerator(g, 400, "RANDOM", "SEARCH_VICINITY");
@@ -42,7 +42,9 @@ public class Main {
 
         //printing:
         for (int e:data) {
-            System.out.println(e);
+            if (e!=0){
+                System.out.println(e);
+            }
         }
 
         System.out.println("Ubers deactivated...");

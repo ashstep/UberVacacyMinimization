@@ -12,6 +12,7 @@ public class RideRequest {
     private Location pickup;
     private Location dropoff;
     private boolean complete;
+    private boolean inUber;
 
     RideRequest(int  activationTime, int end, int duration, Location pickup, Location dropoff) {
         this.assigned = false;
@@ -23,6 +24,7 @@ public class RideRequest {
         this.dropoff = dropoff;
         this.pickup = pickup;
         this.complete = false;
+        this.inUber= false;
     }
 
     //SETTERS GETTERS
@@ -41,8 +43,14 @@ public class RideRequest {
     public boolean isAssigned(){
         return this.assigned;
     }
+    public boolean isInUber(){
+        return this.inUber;
+    }
     public void setComplete(){
         this.complete=true;
+    }
+    public void setInUber(){
+        this.inUber=true;
     }
     public boolean isComplete(){return this.complete;}
     public void updateCompleteStatus(int currentTime) {
@@ -60,12 +68,16 @@ public class RideRequest {
     }
     public String getStatus() {
         StringBuilder s = new StringBuilder();
-        if (this.assigned) {
-            s.append( "ASSIGNED");
-        }
         if (this.active) {
             s.append( " ACTIVE ");
         }
+        if (this.assigned) {
+            s.append( " ASSIGNED ");
+        }
+        if (this.inUber) {
+            s.append( " IN_UBER ");
+        }
+
         if (this.complete) {
             s.append( " COMPLETE ");
         }

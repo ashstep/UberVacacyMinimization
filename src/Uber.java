@@ -62,6 +62,7 @@ public class Uber {
         this.allLocationsList = g.getAllLocationsAsList();
         this.distanceMap = g.getDistanceMap();
         this.vacancyDestinationset = false;
+        this.rideRequest=null;
 
         //assigning start locations: 0 for random 1 for origin
         if (randomOrOrigin==0) {
@@ -78,25 +79,27 @@ public class Uber {
         this.destination_dropoff = r.getDropoff();
 
         this.setArriving();
-        this.allVacancyTimes.add(currTime-currVacancyTime);
+        r.setAssigned();
+       // System.out.println("adding currVacancyTime for " + this.getID() + " -- " + currVacancyTime );
+
+        this.allVacancyTimes.add(currVacancyTime);
 
         if (this.current==null) {
             //was prev unassigned
             assignRandLocation(0);
 
         }
-        System.out.println("  curr "+this.current.getUniqueIdentifier());
-        System.out.println("  destination_pickup "+this.destination_pickup.getUniqueIdentifier());
-
-
+//        System.out.println("  curr "+this.current.getUniqueIdentifier());
+//        System.out.println("  destination_pickup "+this.destination_pickup.getUniqueIdentifier());
+        //System.out.print("   for ride req " + r.getPickup() + " to " +r.getDropoff());
         if ( null== this.distanceMap.get(current)|| null==this.distanceMap.get(current).get(destination_pickup)) {
+            //System.out.println(" - something is null ");
             this.current = findPath();//want a current we can get to desitnation from!!!
 
             if (this.current!=null){
+                //System.out.println(" - now it is not null!!!!!");
                 this.currDistToTravel = this.distanceMap.get(current).get(destination_pickup);
-                System.out.println("  going to client, distance is:" + currDistToTravel);
                 this.allDistancesTravelled.add(this.currDistToTravel);
-                System.out.println("'assigned a requsest!!! status now " + this.status);
                 this.enRoutePickup = true;
                 this.enRouteDropoff = false;
             } else {
@@ -106,7 +109,7 @@ public class Uber {
     }
 
     public Location findPath(){
-        System.out.println("finding path since curr doesnt exist");
+       // System.out.println("finding path since curr doesnt exist");
 
         for (Map.Entry<Location,HashMap<Location,Double>> each : distanceMap.entrySet()) {
             for (Map.Entry<Location,Double> pair: each.getValue().entrySet()) {
@@ -119,24 +122,37 @@ public class Uber {
         this.rideRequest.deleteRequest();
         this.rideRequest = null;
         this.status = vacant;
-
         return null;
     }
 
     public void updateDistance(int time){
        // System.out.println("  uber currently  " + this.status);
         if(this.isVacant()) {
+           // System.out.println("  in the first "+ " for taxi " + this.id);
             this.currVacancyTime++;
             setVacancyPattern();        //need to decide movment pattern
             this.currDistToTravel--;
             checkCurrDistToTravel(time);
-        }
+        }else if (!this.isVacant() && this.enRoutePickup) { //assuming that each increment of currTripTime you travel one unit of distance
+            //System.out.println("  in the second "+ " for taxi " + this.id);
 
-        if (!this.isVacant()) { //assuming that each increment of currTripTime you travel one unit of distance
+            this.currVacancyTime=0;
             this.currTripTime++;
             this.currDistToTravel--;
             this.vacancyDestinationset=false;
             checkCurrDistToTravel(time);
+        } else if (!this.isVacant() &&  !this.enRoutePickup) {
+            //System.out.println("  in the third "+ " for taxi " + this.id);
+
+            this.currVacancyTime = 0;
+            rideRequest.decreaseDuration();
+            this.currTripTime++;
+            this.currDistToTravel--;
+            this.vacancyDestinationset=false;
+            checkCurrDistToTravel(time);
+
+        } else {
+
         }
         //System.out.println("dist update completed ");
     }
@@ -157,28 +173,39 @@ public class Uber {
     private void checkCurrDistToTravel(int time) {
         //System.out.println("  current distance to travel is :" + this.currDistToTravel);
         if (this.currDistToTravel <= 0 && rideRequest!=null) {
+            //System.out.println("has a ride request and reached destination");
             if (this.enRoutePickup) {                             // means client has been picked up
+                //System.out.println(" checkCurrDistToTravel first "+ " for taxi " + this.id);
+
                 this.enRoutePickup = false;
                 this.enRouteDropoff = true;
                 this.status = inRide;
+                rideRequest.setInUber();
                 rideRequest.updateCompleteStatus(time);
                 this.currDistToTravel = this.rideRequest.getDuration();
                 this.current = destination_pickup;
                 this.destination_pickup = null;
             }
             if (this.enRouteDropoff) {                     //ended the trip
+                //System.out.println(" checkCurrDistToTravel sec "+ " for taxi " + this.id);
+
                 this.enRouteDropoff = false;
                 this.enRoutePickup = false;
                 this.currDistToTravel = 0;
                 this.current = destination_dropoff;
                 this.destination_dropoff = null;
                 this.status = vacant;
+               // System.out.println(" adding to trip times " + this.currTripTime + " for taxi " + this.id);
+
                 this.allTripTimes.add(this.currTripTime);
                 rideRequest.updateCompleteStatus(time);
                 this.patternSet = false;
+                this.rideRequest=null;
             }
             if (this.vacancyDestinationset) {
-                 this.currDistToTravel = 0;
+                //System.out.println(" checkCurrDistToTravel last "+ " for taxi " + this.id);
+
+                this.currDistToTravel = 0;
                  this.patternSet = false;
                  this.vacancyDestinationset = false;
                 this.current = destination_pickup;
@@ -243,6 +270,17 @@ public class Uber {
     private void highConcentrationMovement(){
         int i =0;
         this.destination_pickup = g.getPopularLocations().get(i);
+
+        if (this.current ==null) {
+             assignRandLocation(0);
+        }
+//        System.out.println("this.destination_pickup" +  this.getID() + "- "+this.destination_pickup.getUniqueIdentifier());
+//        System.out.println("this.current" + this.current.getUniqueIdentifier());
+
+        if (this.destination_pickup==null || this.distanceMap.get(current)==null || this.distanceMap.get(current).get(destination_pickup)==null){
+            this.current = findPath();//want a current we can get to desitnation from!!!
+        }
+
         this.currDistToTravel = this.distanceMap.get(current).get(destination_pickup);
         this.vacancyDestinationset = true;
     }
@@ -267,7 +305,7 @@ public class Uber {
     public void setArriving(){
         this.enRoutePickup = true;
         this.status =  arriving;
-        //this.vacanciesTime.add(this.currVacancyTime);
+       // this.allVacancyTimes.add(this.currVacancyTime);
         //System.out.println("addng vacancy time -"  + this.currVacancyTime);
     }
     public boolean inRide(){
@@ -306,14 +344,16 @@ public class Uber {
     }
     //printing data
     public void printNumberofRides(List<Integer> li){
-        System.out.println("TAXI #" + this.getID());
+         System.out.println("TAXI #" + this.getID());
         System.out.print( "    - "+ this.allVacancyTimes.size()   + " Vacancy(ies) with Time Duration: [");
         for (int all : getVacancyTimes()) {
             li.add(all);
             System.out.print(all + " ");
 
         }
-        System.out.println("]");
+
+        //comment from here?
+//        System.out.println("]");
 //        System.out.print("    - "+ this.allTripTimes.size()  +" Trips with Time Durations: [");
 //        int total=0;
 //        for (int each: this.allTripTimes) {

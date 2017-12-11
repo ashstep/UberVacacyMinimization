@@ -39,7 +39,6 @@ public class Timer {
         //second check: checking no ride requests left
         for (RideRequest r : allRideReq){
             if (!r.isAssigned() || !r.isComplete()){ //request not assigned yet -> there are some left
-                System.out.println("  traversalIncomplete: taxi requests not completed");
                 return true;
             }
         }
@@ -52,6 +51,7 @@ public class Timer {
         int o=0;
         int b=0;
         int a =0;
+        int w=0;
         System.out.println("PRINTING STATUS OF ALL RIDE REQ ===================");
         for(RideRequest u : all){
             if (u.isComplete()) {
@@ -60,10 +60,12 @@ public class Timer {
             } else if (u.isAssigned() && u.getActive() && !u.isComplete()) {
                 //in progress of ride
                 c2++;
+            } else if (u.isAssigned() && !u.isInUber()) {
+                //waiting for uber
+                w++;
             } else if (u.isAssigned()) {
-                //in progress of ride
                 a++;
-            } else if (!u.getActive()) {
+            } else if (!u.getActive() && !u.isInUber()) {
                 //untouched
                 o++;
             } else {
@@ -74,8 +76,12 @@ public class Timer {
         System.out.println("    NUMBER REQ COMPLETED: " + count);
         System.out.println("    NUMBER REQ IN PROGRESS: " + c2);
         System.out.println("    NUMBER REQ ASSIGNED: " + a);
+        System.out.println("    NUMBER REQ WAITING FOR PICKUP: " + w);
+
         System.out.println("    NUMBER REQ NOT ACTIVE YET: " + o);
         System.out.println("    NUMBER REQ NOT ACCOUNTED: " + b);
+        System.out.println("    TOTAL NUM: " + all.size());
+
 
     }
 

@@ -41,7 +41,7 @@ public class UberGenerator {
     private void randomUberGeneration() {
         for (int i = 0; i < this.numberOfUbers; i++) {
             Uber a = new Uber(graph, traversalBehavior, 0);
-            System.out.println("    - Init "+a.getStatus()+  " Taxi #" + a.getID()+" at location " + a.getCurrLocation().getUniqueIdentifier() + " with vacant-traversal behavior " + a.getmovementPattern());
+            //System.out.println("    - Init "+a.getStatus()+  " Taxi #" + a.getID()+" at location " + a.getCurrLocation().getUniqueIdentifier() + " with vacant-traversal behavior " + a.getmovementPattern());
             allUbers.put( a , null);
         }
         allUbersList = new ArrayList<>(allUbers.keySet());
