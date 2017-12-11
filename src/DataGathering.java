@@ -43,9 +43,6 @@ public class DataGathering {
 
     }
 
-    public void passengerCalc (List<Passenger> passengers){
-
-    }
 
     //such as time
     public void other(){

@@ -3,6 +3,8 @@ import java.util.*;
  * Created by Ashka on 11/20/17.
  * most recent implementation
  *
+ *
+ *
  */
 public class Dijkstra {
     //val is the pair of distances // key is the distance
@@ -10,7 +12,7 @@ public class Dijkstra {
     private HashMap<Road, Boolean> allEdges;
 
     Dijkstra(Graph graph){
-        this.allEdges = graph.getAllEdges();
+        //this.allEdges = graph.getAllEdges();
         calcAllShortestPaths(graph.getAllLocations());
     }
 

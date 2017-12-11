@@ -2,6 +2,8 @@ import java.util.*;
 /**
  * Created by Ashka on 11/15/17.
  * the edge of the graph
+ *
+ * THIS IS NOT USED ANYMORE
  */
 public class Road {
     private Location from;

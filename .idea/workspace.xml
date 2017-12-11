@@ -2,7 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0a7dec7-fcb4-416b-b2e2-e3136e7ab603" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/am_peak.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/midday.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/morning.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Data/pm_peak.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Graph$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/Passenger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Uber/UberData/aug14.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/am_peak.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/evening.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/midday.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/morning.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Data/pm_peak.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/OriginalTravelTimes/Midday.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/OriginalTravelTimes/PM_Peak.xlsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Passenger.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UberData/aug14.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/CSVReader.class" afterPath="$PROJECT_DIR$/out/production/Uber/CSVReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/DataGathering.class" afterPath="$PROJECT_DIR$/out/production/Uber/DataGathering.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Dijkstra.class" afterPath="$PROJECT_DIR$/out/production/Uber/Dijkstra.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Graph.class" afterPath="$PROJECT_DIR$/out/production/Uber/Graph.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Location.class" afterPath="$PROJECT_DIR$/out/production/Uber/Location.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Main.class" afterPath="$PROJECT_DIR$/out/production/Uber/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/RequestGenerator.class" afterPath="$PROJECT_DIR$/out/production/Uber/RequestGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/RideRequest.class" afterPath="$PROJECT_DIR$/out/production/Uber/RideRequest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Road.class" afterPath="$PROJECT_DIR$/out/production/Uber/Road.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Timer.class" afterPath="$PROJECT_DIR$/out/production/Uber/Timer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/Uber.class" afterPath="$PROJECT_DIR$/out/production/Uber/Uber.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/UberGenerator.class" afterPath="$PROJECT_DIR$/out/production/Uber/UberGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Uber/UberHandler.class" afterPath="$PROJECT_DIR$/out/production/Uber/UberHandler.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CSVReader.java" afterPath="$PROJECT_DIR$/src/CSVReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataGathering.java" afterPath="$PROJECT_DIR$/src/DataGathering.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Dijkstra.java" afterPath="$PROJECT_DIR$/src/Dijkstra.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph.java" afterPath="$PROJECT_DIR$/src/Graph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Location.java" afterPath="$PROJECT_DIR$/src/Location.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RequestGenerator.java" afterPath="$PROJECT_DIR$/src/RequestGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RideRequest.java" afterPath="$PROJECT_DIR$/src/RideRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Road.java" afterPath="$PROJECT_DIR$/src/Road.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Timer.java" afterPath="$PROJECT_DIR$/src/Timer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Uber.java" afterPath="$PROJECT_DIR$/src/Uber.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UberGenerator.java" afterPath="$PROJECT_DIR$/src/UberGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/UberHandler.java" afterPath="$PROJECT_DIR$/src/UberHandler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,79 +60,44 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Location.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Location.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="am-peak.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LocationInformation/am-peak.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evening_times.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LocationInformation/evening_times.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="108" lean-forward="false" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="earlymorning.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LocationInformation/earlymorning.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="107" lean-forward="true" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="middayTimes.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LocationInformation/middayTimes.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="108" lean-forward="false" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="108" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pm_peak.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LocationInformation/pm_peak.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graph.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="30">
+              <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
               <folding>
-                <element signature="method#initAvgEdges#0;class#Graph#0" expanded="false" />
-                <element signature="method#printl#0;class#Graph#0" expanded="false" />
-                <element signature="method#initOthers#0;class#Graph#0" expanded="false" />
-                <element signature="method#updatePopularLocations#0;class#Graph#0" expanded="false" />
-                <element signature="e#15273#15281#0" expanded="true" />
-                <element signature="e#15341#15351#0" expanded="true" />
-                <element signature="method#printDistanceMap#0;class#Graph#0" expanded="false" />
+                <element signature="e#513#536#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RideRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RideRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding>
+                <element signature="method#deleteRequest#0;class#RideRequest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UberHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UberHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+              <folding>
+                <element signature="method#UberHandler#0;class#UberHandler#0" expanded="false" />
+                <element signature="e#2782#2803#0" expanded="true" />
+                <element signature="method#getNumAvailableUbers#0;class#UberHandler#0" expanded="false" />
+                <element signature="method#getRandomValidUber#0;class#UberHandler#0" expanded="false" />
+                <element signature="method#getRandomUber#0;class#UberHandler#0" expanded="false" />
+                <element signature="method#highConcentrationLocationDistributor#0;class#UberHandler#0" expanded="false" />
+                <element signature="method#deactivateUbers#0;class#UberHandler#0" expanded="false" />
+                <element signature="method#printFinalUberVacancies#0;class#UberHandler#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -99,34 +106,88 @@
       <file leaf-file-name="CSVReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CSVReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+            <state relative-caret-position="558">
+              <caret line="304" column="5" lean-forward="false" selection-start-line="304" selection-start-column="5" selection-end-line="304" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="method#printLocations#0;class#CSVReader#0" expanded="false" />
-                <element signature="method#printdata#0;class#CSVReader#0" expanded="false" />
+                <element signature="e#1618#1669#0" expanded="false" />
+                <element signature="method#getExistingLocation#0;class#CSVReader#0" expanded="false" />
+                <element signature="method#locationExists#0;class#CSVReader#0" expanded="false" />
+                <element signature="method#setDistanceMap#0;class#CSVReader#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pm_peak_final.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LocationInformation/pm_peak_final.csv">
+      <file leaf-file-name="Timer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Timer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="307" lean-forward="false" selection-start-line="0" selection-start-column="307" selection-end-line="0" selection-end-column="307" />
+            <state relative-caret-position="142">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="e#157#162#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Uber.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Uber.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3376">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="method#startAtBaseLocation#0;class#Uber#0" expanded="false" />
+                <element signature="method#setArriving#0;class#Uber#0" expanded="false" />
+                <element signature="method#shutDownUber#0;class#Uber#0" expanded="false" />
+                <element signature="method#getAvgOccupiedTime#0;class#Uber#0" expanded="false" />
+                <element signature="method#printNumberofRides#0;class#Uber#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dijkstra.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Dijkstra.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <element signature="method#calculateShortestPathFromSource#0;class#Dijkstra#0" expanded="false" />
+                <element signature="method#getShortestDistance#0;class#Dijkstra#0" expanded="false" />
+                <element signature="method#isSettled#0;class#Dijkstra#0" expanded="false" />
+                <element signature="method#findMinimalDistances#0;class#Dijkstra#0" expanded="false" />
+                <element signature="method#getDistance#0;class#Dijkstra#0" expanded="false" />
+                <element signature="method#getNeighbors#0;class#Dijkstra#0" expanded="false" />
+                <element signature="method#getMinimum#0;class#Dijkstra#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RequestGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="midday_final.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LocationInformation/midday_final.csv">
+      <file leaf-file-name="DataGathering.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataGathering.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="645">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="method#other#0;class#DataGathering#0" expanded="false" />
+                <element signature="method#avgVacancies#0;class#DataGathering#0" expanded="false" />
+                <element signature="method#avgOccupiedNum#0;class#DataGathering#0" expanded="false" />
+                <element signature="method#avgOccupiedTime#0;class#DataGathering#0" expanded="false" />
+                <element signature="method#avgProfit#0;class#DataGathering#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,22 +203,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>null</find>
-      <find>assignedClient</find>
-      <find>current</find>
-      <find>this.id</find>
-      <find>this.curre</find>
-      <find>checkCurrDistToTravel</find>
-      <find>updateDistance</find>
-      <find>allUbersList</find>
-      <find>getRandomRideReq</find>
-      <find>Number of</find>
-      <find>printl</find>
-      <find>mapAllDistances</find>
-      <find>allRideReq</find>
-      <find>distanceMap</find>
-      <find>printRideReqStatus</find>
-      <find>get</find>
       <find>waitingArrival</find>
       <find>enRoutePickup</find>
       <find>9</find>
@@ -167,11 +212,27 @@
       <find>moveme</find>
       <find>timeOfDay</find>
       <find>printing the number</find>
-      <find>locationSet</find>
       <find>this.current</find>
       <find>Active</find>
       <find>setActive</find>
       <find>system</find>
+      <find>166</find>
+      <find>244</find>
+      <find>41</find>
+      <find>75</find>
+      <find>allLocationsList</find>
+      <find>allLocations</find>
+      <find>getGraphFromGenerator</find>
+      <find>assigning random locatin for randomized behavior!!</find>
+      <find>assi</find>
+      <find>p</find>
+      <find>getMapOfNearestReq</find>
+      <find>pass</find>
+      <find>mapOfNearestReq</find>
+      <find>inRide</find>
+      <find>printUberStatus</find>
+      <find>locationSet</find>
+      <find>rideRequest</find>
     </findStrings>
     <replaceStrings>
       <replace>Road</replace>
@@ -231,22 +292,23 @@
         <option value="$PROJECT_DIR$/src/Data/pm_peak.txt" />
         <option value="$PROJECT_DIR$/src/Data/midday.txt" />
         <option value="$PROJECT_DIR$/src/Data/evening.txt" />
-        <option value="$PROJECT_DIR$/src/Timer.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Uber.java" />
-        <option value="$PROJECT_DIR$/src/DataGathering.java" />
-        <option value="$PROJECT_DIR$/src/Dijkstra.java" />
-        <option value="$PROJECT_DIR$/src/Location.java" />
-        <option value="$PROJECT_DIR$/src/Passenger.java" />
-        <option value="$PROJECT_DIR$/src/RequestGenerator.java" />
-        <option value="$PROJECT_DIR$/src/RideRequest.java" />
-        <option value="$PROJECT_DIR$/src/Road.java" />
-        <option value="$PROJECT_DIR$/src/UberHandler.java" />
-        <option value="$PROJECT_DIR$/src/UberGenerator.java" />
-        <option value="$PROJECT_DIR$/src/Graph.java" />
-        <option value="$PROJECT_DIR$/src/CSVReader.java" />
         <option value="$PROJECT_DIR$/src/LocationInformation/pm_peak_final.csv" />
         <option value="$PROJECT_DIR$/src/LocationInformation/midday_final.csv" />
+        <option value="$PROJECT_DIR$/src/UberData/green_tripdata_2017-03.csv" />
+        <option value="$PROJECT_DIR$/src/Passenger.java" />
+        <option value="$PROJECT_DIR$/src/Road.java" />
+        <option value="$PROJECT_DIR$/src/UberGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Dijkstra.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/RideRequest.java" />
+        <option value="$PROJECT_DIR$/src/UberHandler.java" />
+        <option value="$PROJECT_DIR$/src/Location.java" />
+        <option value="$PROJECT_DIR$/src/CSVReader.java" />
+        <option value="$PROJECT_DIR$/src/Graph.java" />
+        <option value="$PROJECT_DIR$/src/Timer.java" />
+        <option value="$PROJECT_DIR$/src/Uber.java" />
+        <option value="$PROJECT_DIR$/src/DataGathering.java" />
+        <option value="$PROJECT_DIR$/src/RequestGenerator.java" />
       </list>
     </option>
   </component>
@@ -277,8 +339,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,6 +365,24 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UberHandler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -319,13 +398,104 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="LocationInformation" />
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Timer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RequestGenerator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataGathering" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Uber" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSVReader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,8 +504,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="SearchEverywhereHistoryKey" value="setAssigned&#9;PSI&#9;JAVA://RideRequest#setAssigned&#10;updateDistance&#9;PSI&#9;JAVA://Uber#updateDistance" />
+    <property name="SearchEverywhereHistoryKey" value="getMapOfNearestReq&#9;PSI&#9;JAVA://Uber#getMapOfNearestReq&#10;updateNumberOfPassengers&#9;PSI&#9;JAVA://Graph#updateNumberOfPassengers&#10;Dijkstra&#9;FILE&#9;file:///Users/Ashka/Documents/Workspace/Uber/src/Dijkstra.java&#10;setAssigned&#9;PSI&#9;JAVA://RideRequest#setAssigned&#10;updateDistance&#9;PSI&#9;JAVA://Uber#updateDistance" />
     <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/UberData" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -613,22 +788,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41127923" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19532324" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15625" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006878" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -639,10 +817,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5006878" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -683,7 +859,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="139" />
+      <option name="time" value="151" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -692,29 +868,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="65" column="2" lean-forward="false" selection-start-line="65" selection-start-column="2" selection-end-line="65" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CSVReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="155" column="0" lean-forward="true" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#printLocations#0;class#CSVReader#0" expanded="false" />
-            <element signature="method#printdata#0;class#CSVReader#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UberGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -729,7 +882,6 @@
           <caret line="245" column="62" lean-forward="false" selection-start-line="245" selection-start-column="62" selection-end-line="245" selection-end-column="62" />
           <folding>
             <element signature="method#setArriving#0;class#Uber#0" expanded="false" />
-            <element signature="method#setInRide#0;class#Uber#0" expanded="false" />
             <element signature="method#shutDownUber#0;class#Uber#0" expanded="false" />
             <element signature="method#getAvgOccupiedTime#0;class#Uber#0" expanded="false" />
             <element signature="method#printNumberofRides#0;class#Uber#0" expanded="false" />
@@ -760,7 +912,6 @@
         <state relative-caret-position="405">
           <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding>
-            <element signature="method#traversalIncomplete#0;class#Timer#0" expanded="false" />
             <element signature="method#printRideReqStatus#0;class#Timer#0" expanded="false" />
           </folding>
         </state>
@@ -771,13 +922,8 @@
         <state relative-caret-position="840">
           <caret line="352" column="31" lean-forward="false" selection-start-line="352" selection-start-column="18" selection-end-line="352" selection-end-column="31" />
           <folding>
-            <element signature="method#initAvgEdges#0;class#Graph#0" expanded="false" />
-            <element signature="method#printl#0;class#Graph#0" expanded="false" />
-            <element signature="method#initOthers#0;class#Graph#0" expanded="false" />
-            <element signature="method#updatePopularLocations#0;class#Graph#0" expanded="false" />
-            <element signature="e#15273#15281#0" expanded="true" />
-            <element signature="e#15341#15351#0" expanded="true" />
-            <element signature="method#printDistanceMap#0;class#Graph#0" expanded="false" />
+            <element signature="e#1973#1981#0" expanded="true" />
+            <element signature="method#getAllLocations#0;class#Graph#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -797,10 +943,9 @@
         <state relative-caret-position="600">
           <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
             <element signature="method#updateAllUbers#0;class#UberHandler#0" expanded="false" />
             <element signature="method#getNumAvailableUbers#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#getRandomValidUber#0;class#UberHandler#0" expanded="false" />
             <element signature="method#getRandomUber#0;class#UberHandler#0" expanded="false" />
             <element signature="method#highConcentrationLocationDistributor#0;class#UberHandler#0" expanded="false" />
             <element signature="method#deactivateUbers#0;class#UberHandler#0" expanded="false" />
@@ -830,22 +975,8 @@
     <entry file="file://$PROJECT_DIR$/src/Dijkstra_old.java" />
     <entry file="file://$PROJECT_DIR$/src/LocationComparator.java" />
     <entry file="file://$PROJECT_DIR$/src/aug14.csv" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/am-peak.csv" />
     <entry file="file://$PROJECT_DIR$/src/PrettyPrint.java" />
-    <entry file="file://$PROJECT_DIR$/src/UberData/aug14.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-344">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -860,202 +991,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/morning.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="1012" column="0" lean-forward="true" selection-start-line="1012" selection-start-column="0" selection-end-line="1012" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/am_peak.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/pm_peak.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15165">
-          <caret line="1011" column="33" lean-forward="false" selection-start-line="1011" selection-start-column="33" selection-end-line="1011" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/midday.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="1011" column="33" lean-forward="false" selection-start-line="1011" selection-start-column="33" selection-end-line="1011" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DataGathering.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="method#passengerCalc#0;class#DataGathering#0" expanded="false" />
-            <element signature="method#other#0;class#DataGathering#0" expanded="false" />
-            <element signature="method#avgVacancies#0;class#DataGathering#0" expanded="false" />
-            <element signature="method#avgOccupiedNum#0;class#DataGathering#0" expanded="false" />
-            <element signature="method#avgOccupiedTime#0;class#DataGathering#0" expanded="false" />
-            <element signature="method#avgProfit#0;class#DataGathering#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Dijkstra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          <folding>
-            <element signature="method#calculateShortestPathFromSource#0;class#Dijkstra#0" expanded="false" />
-            <element signature="method#getShortestDistance#0;class#Dijkstra#0" expanded="false" />
-            <element signature="method#isSettled#0;class#Dijkstra#0" expanded="false" />
-            <element signature="method#findMinimalDistances#0;class#Dijkstra#0" expanded="false" />
-            <element signature="method#getDistance#0;class#Dijkstra#0" expanded="false" />
-            <element signature="method#getNeighbors#0;class#Dijkstra#0" expanded="false" />
-            <element signature="method#getMinimum#0;class#Dijkstra#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Passenger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RequestGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="method#getRandomLocation#0;class#RequestGenerator#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RideRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="method#isActiveRequest#0;class#RideRequest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Road.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="method#traversalIncomplete#0;class#Timer#0" expanded="false" />
-            <element signature="method#printRideReqStatus#0;class#Timer#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Uber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="method#setArriving#0;class#Uber#0" expanded="false" />
-            <element signature="method#setInRide#0;class#Uber#0" expanded="false" />
-            <element signature="method#shutDownUber#0;class#Uber#0" expanded="false" />
-            <element signature="method#getAvgOccupiedTime#0;class#Uber#0" expanded="false" />
-            <element signature="method#printNumberofRides#0;class#Uber#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UberHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="95" column="5" lean-forward="false" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="method#updateAllUbers#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#getNumAvailableUbers#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#getRandomValidUber#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#getRandomUber#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#highConcentrationLocationDistributor#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#deactivateUbers#0;class#UberHandler#0" expanded="false" />
-            <element signature="method#printFinalUberVacancies#0;class#UberHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UberGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/evening.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="1012" column="0" lean-forward="true" selection-start-line="1012" selection-start-column="0" selection-end-line="1012" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CSVReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#printLocations#0;class#CSVReader#0" expanded="false" />
-            <element signature="method#printdata#0;class#CSVReader#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LocationInformation/earlymorning.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="107" lean-forward="true" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LocationInformation/am-peak.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="10" column="107" lean-forward="false" selection-start-line="10" selection-start-column="107" selection-end-line="10" selection-end-column="107" />
           <folding />
         </state>
       </provider>
@@ -1068,18 +1007,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LocationInformation/middayTimes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="108" lean-forward="false" selection-start-line="10" selection-start-column="108" selection-end-line="10" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LocationInformation/pm_peak.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1094,24 +1025,251 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LocationInformation/midday_final.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="30">
           <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/evening.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="1012" column="0" lean-forward="true" selection-start-line="1012" selection-start-column="0" selection-end-line="1012" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/midday.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="1011" column="33" lean-forward="false" selection-start-line="1011" selection-start-column="33" selection-end-line="1011" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/OriginalTravelTimes/CS330.ics">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UberData/aug14.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="15060">
+          <caret line="1004" column="28" lean-forward="false" selection-start-line="1004" selection-start-column="13" selection-end-line="1004" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/morning.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="1012" column="0" lean-forward="true" selection-start-line="1012" selection-start-column="0" selection-end-line="1012" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/am_peak.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/pm_peak.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="1011" column="33" lean-forward="false" selection-start-line="1011" selection-start-column="33" selection-end-line="1011" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LocationInformation/am-peak.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LocationInformation/middayTimes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UberData/green_tripdata_2017-03.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="40" lean-forward="true" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Passenger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Road.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UberGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="43" column="202" lean-forward="false" selection-start-line="43" selection-start-column="202" selection-end-line="43" selection-end-column="202" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RideRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="method#deleteRequest#0;class#RideRequest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Location.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UberHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="method#UberHandler#0;class#UberHandler#0" expanded="false" />
+            <element signature="e#2782#2803#0" expanded="true" />
+            <element signature="method#getNumAvailableUbers#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#getRandomValidUber#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#getRandomUber#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#highConcentrationLocationDistributor#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#deactivateUbers#0;class#UberHandler#0" expanded="false" />
+            <element signature="method#printFinalUberVacancies#0;class#UberHandler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CSVReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="304" column="5" lean-forward="false" selection-start-line="304" selection-start-column="5" selection-end-line="304" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1618#1669#0" expanded="false" />
+            <element signature="method#getExistingLocation#0;class#CSVReader#0" expanded="false" />
+            <element signature="method#locationExists#0;class#CSVReader#0" expanded="false" />
+            <element signature="method#setDistanceMap#0;class#CSVReader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="65" column="41" lean-forward="true" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+        <state relative-caret-position="456">
+          <caret line="75" column="69" lean-forward="false" selection-start-line="75" selection-start-column="69" selection-end-line="75" selection-end-column="69" />
           <folding>
-            <element signature="method#initAvgEdges#0;class#Graph#0" expanded="false" />
-            <element signature="method#printl#0;class#Graph#0" expanded="false" />
-            <element signature="method#initOthers#0;class#Graph#0" expanded="false" />
-            <element signature="method#updatePopularLocations#0;class#Graph#0" expanded="false" />
-            <element signature="e#15273#15281#0" expanded="true" />
-            <element signature="e#15341#15351#0" expanded="true" />
-            <element signature="method#printDistanceMap#0;class#Graph#0" expanded="false" />
+            <element signature="e#1973#1981#0" expanded="true" />
+            <element signature="method#getAllLocations#0;class#Graph#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="e#157#162#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Uber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3376">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="method#startAtBaseLocation#0;class#Uber#0" expanded="false" />
+            <element signature="method#setArriving#0;class#Uber#0" expanded="false" />
+            <element signature="method#shutDownUber#0;class#Uber#0" expanded="false" />
+            <element signature="method#getAvgOccupiedTime#0;class#Uber#0" expanded="false" />
+            <element signature="method#printNumberofRides#0;class#Uber#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Dijkstra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="method#calculateShortestPathFromSource#0;class#Dijkstra#0" expanded="false" />
+            <element signature="method#getShortestDistance#0;class#Dijkstra#0" expanded="false" />
+            <element signature="method#isSettled#0;class#Dijkstra#0" expanded="false" />
+            <element signature="method#findMinimalDistances#0;class#Dijkstra#0" expanded="false" />
+            <element signature="method#getDistance#0;class#Dijkstra#0" expanded="false" />
+            <element signature="method#getNeighbors#0;class#Dijkstra#0" expanded="false" />
+            <element signature="method#getMinimum#0;class#Dijkstra#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataGathering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="method#other#0;class#DataGathering#0" expanded="false" />
+            <element signature="method#avgVacancies#0;class#DataGathering#0" expanded="false" />
+            <element signature="method#avgOccupiedNum#0;class#DataGathering#0" expanded="false" />
+            <element signature="method#avgOccupiedTime#0;class#DataGathering#0" expanded="false" />
+            <element signature="method#avgProfit#0;class#DataGathering#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RequestGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="e#513#536#0" expanded="false" />
           </folding>
         </state>
       </provider>

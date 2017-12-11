@@ -21,35 +21,40 @@ public class UberGenerator {
     private String traversalBehavior;
 
     UberGenerator(Graph g, int numofUbers, String creationMethod, String traversalBehavior){
-        this.allUbers = new HashMap<Uber, Boolean>();
+        this.allUbers = new HashMap<>();
         this.li = g.getAllLocationsAsList();
         this.graph = g;
         this.graph_size = graph.getAllLocations().size();
         this.numberOfUbers  = numofUbers;
         this.traversalBehavior = traversalBehavior;
 
-        //creating in random locaitons
         if (creationMethod.equals(rand)) {
             randomUberGeneration();
         } else {
             concentratedLocationGeneration();
         }
-        System.out.println("All " + this.numberOfUbers +" Ubers initialized using intialization method: " + creationMethod  + ", and vacant-traversal-behavior: " + traversalBehavior + ". Exiting Uber Generator...");
+
+        System.out.println("All " + this.numberOfUbers +" Ubers initialized using method: " + creationMethod  + ", and vacant-traversal-behavior: " + traversalBehavior + ". Exiting Uber Generator...");
 
     }
 
     private void randomUberGeneration() {
-        int randomNum;
         for (int i = 0; i < this.numberOfUbers; i++) {
-            randomNum = new Random().nextInt(graph_size);
-            Location start = li.get(randomNum);
-            Uber a = new Uber(graph, start, traversalBehavior);
-            //System.out.println("  - Init vacant Uber #" + a.getID()+" at location   " + a.getCurrLocation().getName());
+            Uber a = new Uber(graph, traversalBehavior, 0);
+            System.out.println("    - Init "+a.getStatus()+  " Taxi #" + a.getID()+" at location " + a.getCurrLocation().getUniqueIdentifier() + " with vacant-traversal behavior " + a.getmovementPattern());
             allUbers.put( a , null);
         }
         allUbersList = new ArrayList<>(allUbers.keySet());
     }
-    private void concentratedLocationGeneration(){}
+
+    private void concentratedLocationGeneration(){
+        for (int i = 0; i < this.numberOfUbers; i++) {
+            Uber a = new Uber(graph, traversalBehavior, 1);
+            //System.out.println("  - Init vacant Uber #" + a.getID()+" at location   " + a.getCurrLocation().getUniqueIdentifier());
+            allUbers.put( a , null);
+        }
+        allUbersList = new ArrayList<>(allUbers.keySet());
+    }
 
     public HashMap<Uber, Boolean> getAllUbers() {
         return this.allUbers;
